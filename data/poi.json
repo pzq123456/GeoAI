@@ -1,0 +1,663 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15470744489899,
+          22.278422043672727
+        ]
+      },
+      "properties": {
+        "id": "1",
+        "category": "mammals"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15500188955957,
+          22.278591427138412
+        ]
+      },
+      "properties": {
+        "id": "2",
+        "category": "mammals"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15524726011006,
+          22.278552308555113
+        ]
+      },
+      "properties": {
+        "id": "3",
+        "category": "mammals"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15549263066055,
+          22.278395834221918
+        ]
+      },
+      "properties": {
+        "id": "4",
+        "category": "mammals"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15583614943122,
+          22.278904375804807
+        ]
+      },
+      "properties": {
+        "id": "5",
+        "category": "mammals"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15544355655045,
+          22.27730051388954
+        ]
+      },
+      "properties": {
+        "id": "6",
+        "category": "mammals"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15561531593579,
+          22.27733963247284
+        ]
+      },
+      "properties": {
+        "id": "7",
+        "category": "mammals"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15581161237617,
+          22.277065802389746
+        ]
+      },
+      "properties": {
+        "id": "8",
+        "category": "birds"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15571346415598,
+          22.27741786963944
+        ]
+      },
+      "properties": {
+        "id": "9",
+        "category": "birds"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15605698292666,
+          22.277183158139643
+        ]
+      },
+      "properties": {
+        "id": "10",
+        "category": "birds"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15630235347714,
+          22.27741786963944
+        ]
+      },
+      "properties": {
+        "id": "11",
+        "category": "birds"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15519818599996,
+          22.278395834221918
+        ]
+      },
+      "properties": {
+        "id": "12",
+        "category": "reptiles"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1553699453853,
+          22.27831759705532
+        ]
+      },
+      "properties": {
+        "id": "13",
+        "category": "reptiles"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15532087127521,
+          22.27769169972253
+        ]
+      },
+      "properties": {
+        "id": "14",
+        "category": "toilet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15512457483482,
+          22.276713735140053
+        ]
+      },
+      "properties": {
+        "id": "15",
+        "category": "toilet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15686670574327,
+          22.27730051388954
+        ]
+      },
+      "properties": {
+        "id": "16",
+        "category": "toilet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15539448244034,
+          22.277613462555934
+        ]
+      },
+      "properties": {
+        "id": "14",
+        "category": "disabled_toilet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15517364894491,
+          22.276596379390156
+        ]
+      },
+      "properties": {
+        "id": "15",
+        "category": "disabled_toilet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15698939101851,
+          22.27730051388954
+        ]
+      },
+      "properties": {
+        "id": "16",
+        "category": "disabled_toilet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15534540833025,
+          22.276779063174164
+        ]
+      },
+      "properties": {
+        "id": "17",
+        "category": "playground"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15603244587162,
+          22.278431040946884
+        ]
+      },
+      "properties": {
+        "id": "18",
+        "category": "kiosk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15609771443805,
+          22.278509278113486
+        ]
+      },
+      "properties": {
+        "id": "19",
+        "category": "office"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15550882511687,
+          22.278078973697195
+        ]
+      },
+      "properties": {
+        "id": "20",
+        "category": "centre"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15523744528804,
+          22.27821980059707
+        ]
+      },
+      "properties": {
+        "id": "21",
+        "category": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15644123320872,
+          22.277609550697605
+        ]
+      },
+      "properties": {
+        "id": "22",
+        "category": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15644957580744,
+          22.276244312140463
+        ]
+      },
+      "properties": {
+        "id": "23",
+        "category": "parking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1560275384606,
+          22.2782628310387
+        ]
+      },
+      "properties": {
+        "id": "24",
+        "category": "visitor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15640050169735,
+          22.277985089097275
+        ]
+      },
+      "properties": {
+        "id": "25",
+        "category": "fountain"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15689124279832,
+          22.277652581139233
+        ]
+      },
+      "properties": {
+        "id": "26",
+        "category": "flight"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15725929862406,
+          22.277652581139233
+        ]
+      },
+      "properties": {
+        "id": "27",
+        "category": "memorial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15593429765141,
+          22.27776993688913
+        ]
+      },
+      "properties": {
+        "id": "28",
+        "category": "pavilion"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15593429765141,
+          22.27741786963944
+        ]
+      },
+      "properties": {
+        "id": "29",
+        "category": "bronze"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15733290978919,
+          22.277809055472428
+        ]
+      },
+      "properties": {
+        "id": "30",
+        "category": "stone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15578707532113,
+          22.276492715144414
+        ]
+      },
+      "properties": {
+        "id": "31",
+        "category": "gate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15608151998171,
+          22.276674616556754
+        ]
+      },
+      "properties": {
+        "id": "32",
+        "category": "greenHouse"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15505096366967,
+          22.27872834217996
+        ]
+      },
+      "properties": {
+        "id": "33",
+        "category": "thematic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15516383412289,
+          22.278004648388926
+        ]
+      },
+      "properties": {
+        "id": "34",
+        "category": "thematic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15573800121103,
+          22.277699523439193
+        ]
+      },
+      "properties": {
+        "id": "35",
+        "category": "thematic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15524726011006,
+          22.27719880557296
+        ]
+      },
+      "properties": {
+        "id": "36",
+        "category": "thematic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15593429765141,
+          22.277535225389336
+        ]
+      },
+      "properties": {
+        "id": "37",
+        "category": "thematic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15622874231201,
+          22.277652581139233
+        ]
+      },
+      "properties": {
+        "id": "38",
+        "category": "thematic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15683726127722,
+          22.277809055472428
+        ]
+      },
+      "properties": {
+        "id": "39",
+        "category": "thematic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15701392807357,
+          22.27773081830583
+        ]
+      },
+      "properties": {
+        "id": "40",
+        "category": "thematic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15711207629376,
+          22.277574343972635
+        ]
+      },
+      "properties": {
+        "id": "41",
+        "category": "thematic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15664587224784,
+          22.27724965973125
+        ]
+      },
+      "properties": {
+        "id": "42",
+        "category": "thematic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15568892710093,
+          22.277574343972635
+        ]
+      },
+      "properties": {
+        "id": "44",
+        "category": "heritage"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1555662418257,
+          22.278004648388926
+        ]
+      },
+      "properties": {
+        "id": "45",
+        "category": "disabled_toilet"
+      }
+    }
+  ]
+}
