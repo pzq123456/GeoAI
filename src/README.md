@@ -1,2 +1,2 @@
 # Backend
-uv run python -m src.api
+uv run python -m src.main

@@ -1,16 +1,14 @@
-import json
 import pyproj
+import asyncio
 from pathlib import Path
-from dataclasses import dataclass
-from typing import List, Dict, Any, Optional, Union
+from dataclasses import dataclass, field
+from typing import List, Dict, Any, Optional
 from pydantic import BaseModel
 
-# 路径配置
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 
 class GeoDataLoader:
-    """负责从磁盘加载静态地理数据"""
     def __init__(self, base_dir: Path = DATA_DIR):
         self.base_path = base_dir
 
@@ -18,6 +16,7 @@ class GeoDataLoader:
         file_path = self.base_path / filename
         if not file_path.exists():
             raise FileNotFoundError(f"Missing data file: {file_path}")
+        import json
         with open(file_path, "r", encoding="utf-8") as f:
             return json.load(f)
 
@@ -27,16 +26,16 @@ class GeoDataLoader:
 
 @dataclass
 class GISDependencies:
-    """AI 运行时的依赖项"""
     loader: GeoDataLoader
+    # 异步队列：用于 Agent 运行期间实时推送工具执行状态
+    status_queue: asyncio.Queue = field(default_factory=asyncio.Queue)
+    # 中间空间：存储巨大的 GeoJSON，防止其进入 LLM 上下文（Token 隔离）
     visual_buffer: Optional[Dict[str, Any]] = None
-    status_updates: Optional[List[str]] = None 
 
     def add_status(self, msg: str):
-        if self.status_updates is not None:
-            self.status_updates.append(msg)
+        self.status_queue.put_nowait(msg)
 
-# AI 输出结构
+# 定义结构化输出模型
 class ClarificationResponse(BaseModel):
     guidance: str
     suggestions: List[str]
@@ -46,7 +45,6 @@ class GISAnalysisOutput(BaseModel):
     final_report: str
     visualization_status: str
 
-# API 请求结构
 class ChatRequest(BaseModel):
     query: str
     history: List[Dict[str, Any]] = []
