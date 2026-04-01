@@ -1,3 +1,5 @@
+/* docs/src/components/chat/style.css */
+
 .chat-container-fixed {
   height: 100%;
   display: flex;
@@ -31,6 +33,19 @@
   font-family: 'Fira Code', monospace;
   font-size: 11px;
   border-bottom: 2px solid var(--el-color-warning);
+  /* 限制高度并支持滚动 */
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: inset 0 -10px 10px rgba(0,0,0,0.2);
+}
+
+/* 自定义滚动条，使其更符合暗色面板风格 */
+.debug-panel::-webkit-scrollbar {
+  width: 4px;
+}
+.debug-panel::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
 }
 
 .debug-header {
@@ -45,6 +60,7 @@
   margin: 0;
   white-space: pre-wrap;
   line-height: 1.4;
+  word-break: break-all;
 }
 
 /* Viewport */
@@ -169,11 +185,49 @@
   40% { transform: scale(1); }
 }
 
+/* --- 弧线管理逻辑 --- */
+
+/* 1. 基础容器状态：默认移除所有圆角，通过选择器精准开启 */
+.status-bar, 
+.selection-tip, 
+.input-card {
+  border-radius: 0; /* 先全部重置为直角 */
+  margin-top: -1px; /* 解决双边框问题 */
+  transition: border-radius 0.2s ease; /* 增加平滑过渡 */
+}
+
+/* 2. 只有当它是第一个出现的"饰条"时，才赋予顶部圆角 */
+.input-fixed-bottom > :first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* 3. 如果 input-card 上面没有任何东西，它自己应该有完整的圆角 */
+.input-card {
+  border-radius: 8px; 
+}
+
+/* 4. 关键：如果 input-card 上面有 selection-tip 或 status-bar，移除其顶部圆角 */
+.status-bar ~ .input-card,
+.selection-tip ~ .input-card {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* 5. 关键：如果 status-bar 下面紧跟着 selection-tip，移除 status-bar 的底部圆角(默认已是0)
+      并确保 selection-tip 的顶部也是直角 */
+.status-bar + .selection-tip {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 /* Input Fixed Area */
 .input-fixed-bottom {
   padding: 16px;
   background: var(--el-bg-color-overlay);
   border-top: 1px solid var(--el-border-color-lighter);
+  display: flex;
+  flex-direction: column;
 }
 
 .selection-tip {
@@ -184,7 +238,6 @@
   background: var(--el-color-primary-light-9);
   border: 1px solid var(--el-color-primary-light-8);
   border-bottom: none;
-  border-radius: 8px 8px 0 0;
 }
 
 .tip-text {
@@ -194,15 +247,9 @@
 
 .input-card {
   border: 1px solid var(--el-border-color);
-  border-radius: 8px;
   padding: 10px;
   transition: all 0.3s;
   background: var(--el-bg-color);
-}
-
-.input-card.has-tip {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 
 .input-card:focus-within {

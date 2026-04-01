@@ -27,7 +27,7 @@ const mapStore = useMapStore();
 //   return hexToRgbaArray(hexColor);
 // }
 
-console.log(park_data);
+// console.log(park_data);
 // USA 基础图层
 const parkLayer = new Layer('Park-Layer', GeoJsonLayer, {
   opacity: 0.5,

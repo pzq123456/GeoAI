@@ -6,51 +6,48 @@ export class GeoAIService {
     this.baseUrl = baseUrl;
   }
 
-  /**
-   * 发送聊天请求并处理流式 SSE 响应
-   * @param {Object} params 
-   * @param {string} params.query 用户输入
-   * @param {Array} params.history 历史记录
-   * @param {Object} [params.context_features] 可选的地理上下文
-   * @param {Object} handlers 回调处理函数
-   */
-  async chat({ query, history = [], context_features = null }, {
-    onStatus,      // 过程状态回调
-    onGeoJson,     // 地理数据回调
-    onFinal,       // 最终报告回调
-    onError        // 错误回调
+  async chat({ query, history = []}, {
+    onStatus, onGeoJson, onFinal, onError
   }) {
     try {
       const response = await fetch(`${this.baseUrl}/api/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query, history, context_features }),
+        body: JSON.stringify({ query, history }),
       });
 
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
-      // 处理 SSE 流
       const reader = response.body.getReader();
       const decoder = new TextDecoder();
+      let buffer = ""; // 【新增】用于处理跨 chunk 的数据缓冲
 
       while (true) {
         const { value, done } = await reader.read();
         if (done) break;
 
-        const chunk = decoder.decode(value, { stream: true });
+        buffer += decoder.decode(value, { stream: true });
         
-        // SSE 格式通常是 "data: {...}\n\n"，这里进行解析
-        const lines = chunk.split("\n");
-        for (const line of lines) {
+        // SSE 标准使用双换行符分隔消息
+        const parts = buffer.split("\n\n");
+        
+        // 【关键】保留最后一个可能不完整的 part 到 buffer 中
+        buffer = parts.pop();
+
+        for (const part of parts) {
+          const line = part.trim();
           if (line.startsWith("data: ")) {
             const rawData = line.replace("data: ", "").trim();
             if (!rawData) continue;
 
             try {
-              const parsed = JSON.parse(rawData);
+              let parsed = JSON.parse(rawData);
+              if (typeof parsed === 'string') {
+                parsed = JSON.parse(parsed);
+              }
               this._handleMessage(parsed, { onStatus, onGeoJson, onFinal });
             } catch (e) {
-              console.error("解析 SSE 数据片段失败", e);
+              console.error("解析 SSE 数据失败。Raw:", rawData, "Error:", e);
             }
           }
         }
@@ -61,7 +58,6 @@ export class GeoAIService {
     }
   }
 
-  // 内部路由逻辑：分发不同类型的数据
   _handleMessage(message, { onStatus, onGeoJson, onFinal }) {
     const { type, data } = message;
 
@@ -70,24 +66,24 @@ export class GeoAIService {
         if (onStatus) onStatus(data);
         break;
       case "final_result":
-        // 最终结果里包含 report, geojson, new_history
         if (data.geojson && onGeoJson) {
           onGeoJson(data.geojson);
         }
         if (onFinal) {
           onFinal({
             report: data.report,
-            history: JSON.parse(data.new_history) // 后端传的是 JSON 字符串
+            // 【修复】不要再对 data.new_history 进行 JSON.parse，它已经是对象了
+            history: data.new_history 
           });
         }
         break;
       case "error":
-        throw new Error(data);
+        console.error("Agent 运行报错:", data);
+        break;
       default:
         console.warn("未知消息类型:", type);
     }
   }
 }
 
-// 导出单例
 export const geoAI = new GeoAIService();
