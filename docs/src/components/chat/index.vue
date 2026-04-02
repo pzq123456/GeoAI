@@ -1,143 +1,135 @@
 <template>
-    <div class="chat-container-fixed">
-        <div class="chat-header">
-            <div class="header-left">
-                <span class="title-main">AI Map Assistant</span>
-                <el-tag size="small" type="success" effect="plain" round>Active</el-tag>
+  <div class="chat-container-fixed">
+    <header class="chat-header">
+      <div class="header-left">
+        <span class="title-main">AI Map Assistant</span>
+      </div>
+      <div class="header-right" style="display:flex; align-items:center; gap:10px;">
+        <ThemeSwitch />
+        <el-button :type="showDebug ? 'warning' : 'info'" size="small" link @click="showDebug = !showDebug">
+          <el-icon><Monitor /></el-icon>
+        </el-button>
+      </div>
+    </header>
+
+    <Transition name="el-zoom-in-top">
+      <div v-if="showDebug" class="debug-panel" style="max-height: 150px; overflow-y: auto; background: #1a1a1a; padding: 10px;">
+        <pre style="color: #00ff00; font-size: 11px; margin:0;">{{ JSON.stringify(debugInfo, null, 2) }}</pre>
+      </div>
+    </Transition>
+
+    <div class="chat-viewport" ref="chatRef">
+      <div class="message-list">
+        <div v-for="(msg, index) in messages" :key="index" :class="['msg-row', msg.role]">
+          <div class="avatar-wrapper">
+            <el-avatar :size="24" :src="msg.role === 'ai' ? 'https://api.dicebear.com/7.x/bottts/svg?seed=Felix' : ''">
+              <el-icon v-if="msg.role === 'user'"><User /></el-icon>
+            </el-avatar>
+          </div>
+          <div class="msg-content-wrapper">
+            <div class="bubble">
+              <template v-if="msg.role === 'ai'">
+                <MarkdownRender v-if="msg.content" :content="msg.content" />
+                <div v-else class="mini-typing">
+                  <span></span><span></span><span></span>
+                </div>
+              </template>
+              <template v-else>{{ msg.content }}</template>
             </div>
-            <div class="header-right">
-                <el-button :type="showDebug ? 'warning' : 'info'" size="small" plain @click="showDebug = !showDebug">
-                    <el-icon>
-                        <Monitor />
-                    </el-icon>
-                    <span class="btn-text">{{ showDebug ? 'Hide Logs' : 'Debug' }}</span>
-                </el-button>
+            <div v-if="msg.role === 'ai' && msg.content" class="msg-ops">
+              <el-button link size="small" @click="handleCopy(msg.content)">
+                <el-icon><CopyDocument /></el-icon>
+                <span style="font-size: 11px; margin-left: 4px;">Copy Raw</span>
+              </el-button>
             </div>
+          </div>
         </div>
-
-        <Transition name="el-zoom-in-top">
-            <div v-if="showDebug" class="debug-panel">
-                <div class="debug-header">
-                    <span>Payload Context</span>
-                    <span>{{ debugInfo.timestamp }}</span>
-                </div>
-                <pre class="debug-content">{{ JSON.stringify(debugInfo, null, 2) }}</pre>
-            </div>
-        </Transition>
-
-        <div class="chat-viewport" ref="chatRef">
-            <div class="message-list">
-                <div v-for="(msg, index) in messages" :key="index" :class="['msg-row', msg.role]">
-                    <div class="avatar-wrapper">
-                        <el-avatar :size="32"
-                            :src="msg.role === 'ai' ? 'https://api.dicebear.com/7.x/bottts/svg?seed=Felix' : ''">
-                            <el-icon v-if="msg.role === 'user'">
-                                <User />
-                            </el-icon>
-                        </el-avatar>
-                    </div>
-                    <div class="msg-content">
-                        <div class="bubble">
-                            <template v-if="msg.role === 'ai'">
-                                <MarkdownRender v-if="msg.content" :content="msg.content" custom-id="map-ai-renderer" />
-                                <div v-else class="typing-placeholder">
-                                    <div class="mini-typing"><span></span><span></span><span></span></div>
-                                </div>
-                            </template>
-                            <template v-else>{{ msg.content }}</template>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="input-fixed-bottom">
-            <Transition name="el-zoom-in-top">
-                <div v-if="isTyping" class="status-bar">
-                    <div class="status-content">
-                        <div class="mini-typing"><span></span><span></span><span></span></div>
-                        <span class="status-text">{{ currentStatus || 'AI is thinking...' }}</span>
-                    </div>
-                </div>
-            </Transition>
-
-            <Transition name="el-zoom-in-top">
-                <div v-if="selectedRegion" class="selection-tip">
-                    <div class="tip-body">
-                        <el-icon color="var(--el-color-primary)">
-                            <LocationInformation />
-                        </el-icon>
-                        <span class="tip-text">Context: <b>{{ selectedRegion.properties?.name || 'Selected Area'
-                        }}</b></span>
-                    </div>
-                    <el-button link type="primary" size="small" @click="clearSelection">Clear</el-button>
-                </div>
-            </Transition>
-            <div class="input-card" :class="{ 'has-tip': selectedRegion || isTyping }">
-                <el-input v-model="inputMsg" type="textarea" :rows="2" placeholder="Ask about the map..." resize="none"
-                    @keydown.enter.exact.prevent="handleHandleSend" />
-                <div class="input-actions">
-                    <span class="input-tip"><b>Enter</b> send / <b>Shift+Enter</b> wrap</span>
-                    <el-button type="primary" :loading="isTyping" @click="handleHandleSend"
-                        :disabled="!inputMsg.trim()">
-                        <el-icon>
-                            <Promotion />
-                        </el-icon>
-                    </el-button>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+
+    <footer class="input-fixed-bottom">
+      <Transition name="el-zoom-in-top">
+        <div v-if="isTyping" class="status-bar">
+          <div class="mini-typing"><span></span><span></span><span></span></div>
+          <span class="status-text">{{ currentStatus || 'Thinking...' }}</span>
+        </div>
+      </Transition>
+
+      <Transition name="el-zoom-in-top">
+        <div v-if="selectedRegion" class="selection-tip" style="padding: 6px 12px; background: var(--el-color-primary-light-9); display:flex; justify-content: space-between; align-items:center;">
+          <span style="font-size: 12px;"><el-icon><LocationInformation /></el-icon> Context: <b>{{ selectedRegion.properties?.name || 'Selected' }}</b></span>
+          <el-button link type="primary" size="small" @click="clearSelection">Clear</el-button>
+        </div>
+      </Transition>
+
+      <div class="input-card">
+        <el-input 
+          v-model="inputMsg" 
+          type="textarea" 
+          :rows="2" 
+          placeholder="Ask a question..." 
+          resize="none"
+          @keydown.enter.exact.prevent="handleSend" 
+        />
+        <div class="input-actions" style="display:flex; justify-content: space-between; align-items:center; margin-top: 4px;">
+          <span style="font-size: 11px; color: #999;">Enter to send / Shift+Enter for newline</span>
+          <el-button type="primary" size="small" :loading="isTyping" @click="handleSend" :disabled="!inputMsg.trim()">
+            <el-icon><Promotion /></el-icon>
+          </el-button>
+        </div>
+      </div>
+    </footer>
+  </div>
 </template>
 
 <script setup>
 import { ref, nextTick, reactive } from 'vue';
-import { User, Promotion, Monitor, LocationInformation } from '@element-plus/icons-vue';
+import { ElMessage } from 'element-plus';
+import { User, Promotion, Monitor, CopyDocument, LocationInformation } from '@element-plus/icons-vue';
 import MarkdownRender from 'markstream-vue';
 import 'markstream-vue/index.css';
 import './style.css';
-
-// 导入提取的逻辑
+import ThemeSwitch from '@/components/ThemeSwitch.vue';
 import { useChatLogic } from './useChatLogic';
 
 const emit = defineEmits(['refresh-map']);
-const {
-    isTyping, currentStatus, debugInfo, selectedRegion,
-    clearSelection, sendMessage
-} = useChatLogic(emit);
+const { isTyping, currentStatus, debugInfo, selectedRegion, clearSelection, sendMessage } = useChatLogic(emit);
 
-// UI 独占状态
 const inputMsg = ref('');
 const chatRef = ref(null);
 const showDebug = ref(false);
-const messages = ref([
-    { role: 'ai', content: 'Map system initialized. Select an object or ask a question.' }
-]);
+const messages = ref([{ role: 'ai', content: 'System initialized. Ready for map analysis.' }]);
 
 const scrollToBottom = async () => {
-    await nextTick();
-    if (chatRef.value) {
-        chatRef.value.scrollTo({ top: chatRef.value.scrollHeight, behavior: 'smooth' });
-    }
+  await nextTick();
+  if (chatRef.value) {
+    chatRef.value.scrollTop = chatRef.value.scrollHeight;
+  }
 };
 
-const handleHandleSend = async () => {
-    const query = inputMsg.value.trim();
-    if (!query || isTyping.value) return;
+const handleCopy = async (text) => {
+  try {
+    await navigator.clipboard.writeText(text);
+    ElMessage.success({ message: 'Copied', duration: 1000 });
+  } catch (err) {
+    ElMessage.error('Failed to copy');
+  }
+};
 
-    // 1. UI 层添加用户消息
-    messages.value.push({ role: 'user', content: query });
-    inputMsg.value = '';
+const handleSend = async () => {
+  const query = inputMsg.value.trim();
+  if (!query || isTyping.value) return;
 
-    // 2. 准备 AI 占位消息
-    const aiMsg = reactive({ role: 'ai', content: '' });
-    messages.value.push(aiMsg);
-    await scrollToBottom();
+  messages.value.push({ role: 'user', content: query });
+  inputMsg.value = '';
+  
+  const aiMsg = reactive({ role: 'ai', content: '' });
+  messages.value.push(aiMsg);
+  await scrollToBottom();
 
-    // 3. 调用业务逻辑层，传入更新回调
-    await sendMessage(query, (content) => {
-        aiMsg.content = content;
-        scrollToBottom();
-    });
+  await sendMessage(query, (content) => {
+    aiMsg.content = content; // MarkdownRender 组件会自动处理内容更新带来的“流式”视觉感
+    scrollToBottom();
+  });
 };
 </script>

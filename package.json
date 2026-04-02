@@ -35,6 +35,7 @@
   ],
   "dependencies": {
     "axios": "^1.14.0",
+    "lodash": "^4.18.1",
     "markstream-vue": "^0.0.10-beta.5"
   }
 }

@@ -8,6 +8,7 @@
         <el-tooltip content="Refresh Layers" placement="bottom">
           <el-button :icon="Refresh" @click="handleRefresh" />
         </el-tooltip>
+        
       </el-button-group>
     </div>
     
@@ -18,7 +19,8 @@
 </template>
 
 <script setup>
-import { FullScreen, Refresh, Setting } from '@element-plus/icons-vue'
+import { FullScreen, Refresh, Setting } from '@element-plus/icons-vue';
+
 defineEmits(['toggle-fullscreen'])
 
 const handleRefresh = () => {

@@ -1,15 +1,13 @@
 <template>
   <div class="layout-fixed-height" v-loading="mapLoading" element-loading-text="Initializing Map System...">
-    <el-splitter style="height: 100vh">
+    <el-splitter class="main-splitter">
 
       <el-splitter-panel :size="300" :min="250" collapsible>
         <div class="panel-inner">
           <SidebarControls @toggle-fullscreen="handleFullScreen" @toggle-theme="toggleTheme" />
           <div class="sidebar-content">
             <Layers :layerGroup="layerGroup" :onUpdated="updateDeckLayers" />
-
             <el-divider />
-
             <PropertyCard :data="selectedRegion" />
           </div>
         </div>
@@ -17,8 +15,13 @@
 
       <el-splitter-panel>
         <div class="panel-inner">
-          <MapComponent v-if="initialViewState" :center="[initialViewState.longitude, initialViewState.latitude]"
-            :zoom="initialViewState.zoom" ref="map" @map-loaded="handleMapLoaded" />
+          <MapComponent 
+            v-if="initialViewState" 
+            :center="[initialViewState.longitude, initialViewState.latitude]"
+            :zoom="initialViewState.zoom" 
+            ref="map" 
+            @map-loaded="handleMapLoaded" 
+          />
         </div>
       </el-splitter-panel>
 
@@ -55,7 +58,6 @@ const initialViewState = {
   zoom: 16,
 };
 
-// 1. 接回：图层更新逻辑
 const updateDeckLayers = () => {
   if (deckMap) {
     deckMap.setProps({
@@ -64,11 +66,9 @@ const updateDeckLayers = () => {
   }
 };
 
-// 2. 接回：地图拾取与高亮的核心逻辑
 const selectedRegion = computed(() => mapStore.selectedRegion);
 
 watch(selectedRegion, (newRegion) => {
-  // 查找并更新高亮图层数据
   const highlightLayer = layerGroup.layers.find((l) => l.id === 'Highlight-Layer');
   if (highlightLayer) {
     highlightLayer.data = newRegion ? [newRegion] : [];
@@ -96,22 +96,40 @@ const toggleTheme = () => {
 </script>
 
 <style scoped>
-.layout-fixed-height {
-  height: 100vh;
-  width: 100vw;
+/* 修复点：强制 html/body 溢出隐藏，这是最外层的保险 */
+:global(html, body) {
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  background-color: var(--el-bg-color);
+  width: 100%;
+  height: 100%;
 }
 
+.layout-fixed-height {
+  height: 100vh;
+  width: 100%; /* 修复：必须是 100% 而不是 100vw */
+  overflow: hidden; 
+  background-color: var(--el-bg-color);
+  display: flex;
+}
+
+.main-splitter {
+  height: 100% !important; /* 修复：继承父级高度 */
+  width: 100% !important;
+  border: none !important; /* 修复：移除可能导致 1px 溢出的边框 */
+}
+
+/* 修复点：面板容器必须锁定 overflow，防止内部微小溢出 */
 .panel-inner {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
+  overflow: hidden; 
 }
 
 .relative-container {
   position: relative;
-  /* 核心：为内部绝对定位的 AIChat 提供基准 */
 }
 
 .ai-component-wrapper {
@@ -122,7 +140,8 @@ const toggleTheme = () => {
 
 .sidebar-content {
   flex: 1;
-  overflow-y: auto;
+  overflow-y: auto; /* 仅在侧边栏内容区允许垂直滚动 */
+  overflow-x: hidden; /* 严禁侧边栏出现横向滚动 */
   padding: 12px;
 }
 
@@ -143,5 +162,10 @@ const toggleTheme = () => {
 :deep(.mapboxgl-map) {
   width: 100% !important;
   height: 100% !important;
+}
+
+/* 修复点：移除 Element Splitter 默认边框影响 */
+:deep(.el-splitter__panel) {
+  overflow: hidden;
 }
 </style>

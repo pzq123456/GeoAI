@@ -1,5 +1,6 @@
 ---
 layout: page
+navbar: false
 ---
 
 <deckMap />

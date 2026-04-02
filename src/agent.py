@@ -3,12 +3,10 @@ from typing import Union, Dict, Any, List
 from pydantic_ai import Agent, RunContext
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.deepseek import DeepSeekProvider
-from shapely.geometry import shape, mapping, Point, LineString, Polygon, GeometryCollection
+from shapely.geometry import shape, mapping, LineString, Polygon
 from shapely.ops import transform, unary_union
 
 from .schema import GISDependencies, GISAnalysisOutput, ClarificationResponse
-import math
-from itertools import combinations
 
 model = OpenAIChatModel(
     model_name='deepseek-chat',
@@ -159,134 +157,3 @@ async def save_to_visualization_layer(ctx: RunContext[GISDependencies], geojson_
     ctx.deps.visual_buffer = geojson_data
     ctx.deps.add_status("可视化数据同步完成，准备渲染...")
     return "✅ 渲染层同步成功"
-
-@gis_expert.tool
-async def analyze_topological_relationships(ctx: RunContext[GISDependencies], feature_ids: List[str]) -> str:
-    """
-    拓扑关系诊断：识别要素间的空间交互（相接、包含、交叉）。
-    可视化：高亮显示具有拓扑关联的要素对。
-    """
-    ctx.deps.add_status("正在构建拓扑关系矩阵...")
-    try:
-        data = ctx.deps.loader.load_geojson("park.json")
-        tf_to_deg = ctx.deps.loader.get_transformer("EPSG:3857", "EPSG:4326")
-        
-        targets = [f for f in data['features'] if (f.get("id") or f.get("properties", {}).get("@id")) in feature_ids]
-        results = []
-        visual_features = []
-
-        for f1, f2 in combinations(targets, 2):
-            g1, g2 = shape(f1['geometry']), shape(f2['geometry'])
-            id1, id2 = f1.get("id", "f1"), f2.get("id", "f2")
-            
-            rel = "disjoint"
-            if g1.touches(g2): rel = "TOUCH (相邻/挂接)"
-            elif g1.contains(g2): rel = f"CONTAINS ({id1} 包含 {id2})"
-            elif g2.contains(g1): rel = f"WITHIN ({id1} 在 {id2} 内)"
-            elif g1.intersects(g2): rel = "INTERSECT (重叠/交叉)"
-            
-            if rel != "disjoint":
-                results.append(f"[{id1}] <-> [{id2}]: {rel}")
-                # 提取关联部分进行可视化
-                visual_features.append(f1)
-                visual_features.append(f2)
-
-        if not results: return "分析完成：所选要素在空间上完全独立，无直接拓扑接触。"
-
-        ctx.deps.visual_buffer = {"type": "FeatureCollection", "features": visual_features}
-        return "发现以下拓扑关系：\n" + "\n".join(results) + "\n✅ 关联要素已推送到渲染层。"
-    except Exception as e:
-        return f"拓扑分析失败: {str(e)}"
-
-@gis_expert.tool
-async def calculate_spatial_clustering(ctx: RunContext[GISDependencies], feature_ids: List[str]) -> str:
-    """
-    空间聚集度分析：使用 ANN (平均最近邻) 算法判断分布模式。
-    可视化：生成所有要素的凸包 (Convex Hull) 及其重心点。
-    """
-    ctx.deps.add_status("计算空间分布显著性...")
-    try:
-        data = ctx.deps.loader.load_geojson("park.json")
-        tf_to_m = ctx.deps.loader.get_transformer()
-        tf_to_deg = ctx.deps.loader.get_transformer("EPSG:3857", "EPSG:4326")
-        
-        geoms_m = [transform(tf_to_m, shape(f['geometry'])) for f in data['features'] if (f.get("id") or f.get("properties", {}).get("@id")) in feature_ids]
-        centroids = [g.centroid for g in geoms_m]
-        
-        # ANN 计算
-        n = len(centroids)
-        if n < 3: return "样本量过小，无法进行聚集度统计。"
-        
-        sum_dist = 0
-        for i, p1 in enumerate(centroids):
-            min_d = min(p1.distance(p2) for j, p2 in enumerate(centroids) if i != j)
-            sum_dist += min_d
-        
-        obs_avg_dist = sum_dist / n
-        # 理论随机距离: 0.5 / sqrt(n/Area)
-        area = unary_union(geoms_m).envelope.area
-        exp_avg_dist = 0.5 / math.sqrt(n / area) if area > 0 else 1
-        r_value = obs_avg_dist / exp_avg_dist
-        
-        status = "聚集 (Clustered)" if r_value < 1 else "离散 (Dispersed)"
-        if 0.9 < r_value < 1.1: status = "随机 (Random)"
-
-        # 可视化：生成凸包
-        hull_m = unary_union(geoms_m).convex_hull
-        hull_geo = mapping(transform(tf_to_deg, hull_m))
-        
-        ctx.deps.visual_buffer = {
-            "type": "FeatureCollection",
-            "features": [
-                {"type": "Feature", "geometry": hull_geo, "properties": {"label": "聚集范围凸包", "r_index": round(r_value, 2)}},
-                *[{"type": "Feature", "geometry": mapping(transform(tf_to_deg, c)), "properties": {"type": "centroid"}} for c in centroids]
-            ]
-        }
-        
-        return f"分布模式：{status}\n- ANN 指数: {r_value:.2f}\n- 观测平均距离: {obs_avg_dist:.2f} 米\n✅ 聚集凸包与重心已推送渲染。"
-    except Exception as e:
-        return f"聚集分析异常: {str(e)}"
-
-@gis_expert.tool
-async def analyze_network_centrality(ctx: RunContext[GISDependencies], line_ids: List[str]) -> str:
-    """
-    线网络中心性分析：识别路网/线状要素中的关键枢纽。
-    可视化：将线段按重要程度进行分级渲染（模拟热力效果）。
-    """
-    ctx.deps.add_status("正在构建逻辑路网结构...")
-    try:
-        data = ctx.deps.loader.load_geojson("park.json")
-        tf_to_deg = ctx.deps.loader.get_transformer("EPSG:3857", "EPSG:4326")
-        
-        lines = [f for f in data['features'] if (f.get("id") or f.get("properties", {}).get("@id")) in line_ids]
-        if not lines: return "未找到有效的线状要素进行网络分析。"
-
-        # 简化版中心性逻辑：计算每条线与其他线的连接数 (Degree)
-        line_geoms = [(f, shape(f['geometry'])) for f in lines]
-        connectivity = []
-        
-        for i, (f1, g1) in enumerate(line_geoms):
-            connections = 0
-            for j, (f2, g2) in enumerate(line_geoms):
-                if i != j and g1.intersects(g2):
-                    connections += 1
-            
-            # 将连接度存入属性
-            f1_copy = f1.copy()
-            f1_copy['properties'] = {**f1.get('properties', {}), "connectivity": connections, "weight": connections * 2}
-            connectivity.append((f1.get("id"), connections, f1_copy))
-
-        # 按重要性排序
-        connectivity.sort(key=lambda x: x[1], reverse=True)
-        top_node = connectivity[0]
-        
-        ctx.deps.visual_buffer = {
-            "type": "FeatureCollection",
-            "features": [item[2] for item in connectivity]
-        }
-
-        return (f"网络分析完成：\n"
-                f"- 核心节点：{top_node[0]} (连接数: {top_node[1]})\n"
-                f"- 网络连通性已在渲染层通过 'connectivity' 权重进行分级显示。")
-    except Exception as e:
-        return f"路网分析失败: {str(e)}"
