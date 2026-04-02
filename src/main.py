@@ -54,20 +54,27 @@ async def chat_handler(request: ChatRequest):
         # 5. 处理最终结果
         try:
             result = await run_task
-            
-            # 【核心修正】根据文档，AgentRunResult 的数据属性是 .output 而非 .data
             final_data = result.output
-            
-            # 处理历史记录 (使用官方 Adapter 序列化)
+
+            # --- 【核心修正开始】 ---
+            # 将 staging 列表转换为标准的 GeoJSON 格式推送给前端
+            combined_geojson = None
+            if deps.visual_staging:
+                combined_geojson = {
+                    "type": "FeatureCollection",
+                    "features": deps.visual_staging
+                }
+            # --- 【核心修正结束】 ---
+
+            # 处理历史记录
             full_history = validated_history + result.new_messages()
             history_json_bytes = ModelMessagesTypeAdapter.dump_json(full_history)
             history_for_payload = json.loads(history_json_bytes)
 
             # 组装返回载荷
             response_payload = {
-                # 对结构化模型进行 model_dump
                 "report": final_data.model_dump() if hasattr(final_data, 'model_dump') else final_data,
-                "geojson": deps.visual_buffer, 
+                "geojson": combined_geojson,  # 替换为修正后的变量
                 "new_history": history_for_payload 
             }
             yield sse_msg("final_result", response_payload)

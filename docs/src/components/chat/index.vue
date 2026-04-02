@@ -50,15 +50,7 @@
     <footer class="input-fixed-bottom">
       <Transition name="el-zoom-in-top">
         <div v-if="isTyping" class="status-bar">
-          <div class="mini-typing"><span></span><span></span><span></span></div>
           <span class="status-text">{{ currentStatus || 'Thinking...' }}</span>
-        </div>
-      </Transition>
-
-      <Transition name="el-zoom-in-top">
-        <div v-if="selectedRegion" class="selection-tip" style="padding: 6px 12px; background: var(--el-color-primary-light-9); display:flex; justify-content: space-between; align-items:center;">
-          <span style="font-size: 12px;"><el-icon><LocationInformation /></el-icon> Context: <b>{{ selectedRegion.properties?.name || 'Selected' }}</b></span>
-          <el-button link type="primary" size="small" @click="clearSelection">Clear</el-button>
         </div>
       </Transition>
 
@@ -72,7 +64,12 @@
           @keydown.enter.exact.prevent="handleSend" 
         />
         <div class="input-actions" style="display:flex; justify-content: space-between; align-items:center; margin-top: 4px;">
-          <span style="font-size: 11px; color: #999;">Enter to send / Shift+Enter for newline</span>
+                <Transition name="el-zoom-in-top">
+        <div v-if="selectedRegion" class="selection-tip">
+          <span style="font-size: 12px;"><el-icon><LocationInformation /></el-icon> Context: <b>{{ selectedRegion.properties?.name || 'Selected' }}</b></span>
+          <el-button link type="primary" size="small" @click="clearSelection">Clear</el-button>
+        </div>
+      </Transition>
           <el-button type="primary" size="small" :loading="isTyping" @click="handleSend" :disabled="!inputMsg.trim()">
             <el-icon><Promotion /></el-icon>
           </el-button>

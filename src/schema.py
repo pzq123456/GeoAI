@@ -29,7 +29,12 @@ class GISDependencies:
     loader: GeoDataLoader
     # 异步队列：用于 Agent 运行期间实时推送工具执行状态
     status_queue: asyncio.Queue = field(default_factory=asyncio.Queue)
-    # 中间空间：存储巨大的 GeoJSON，防止其进入 LLM 上下文（Token 隔离）
+    
+    # 【新增/修改】可视化抽屉：用于存储 AI 链式调用过程中产生的所有要素
+    # 使用 field 确保每个实例都有独立的列表
+    visual_staging: List[Dict[str, Any]] = field(default_factory=list)
+    
+    # 原有的 buffer 也可以保留作为兼容，或者直接弃用
     visual_buffer: Optional[Dict[str, Any]] = None
 
     def add_status(self, msg: str):
