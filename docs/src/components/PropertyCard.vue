@@ -13,7 +13,6 @@
         >
           <template #label>
             <div class="prop-label">
-              <el-icon><InfoFilled /></el-icon>
               {{ key }}
             </div>
           </template>
@@ -79,19 +78,16 @@ const copyToClipboard = async (text) => {
 
 <style scoped>
 .property-container {
-  padding: 8px;
+  padding: 2px;
   background-color: var(--el-bg-color);
-  border-radius: 8px;
 }
 
 /* 标签样式微调 */
 .prop-label {
   display: flex;
   align-items: center;
-  gap: 6px;
   font-weight: 600;
   color: var(--el-text-color-secondary);
-  white-space: nowrap;
 }
 
 /* 值区域容器 */
@@ -99,12 +95,10 @@ const copyToClipboard = async (text) => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
 }
 
 .prop-text {
-  font-family: 'Fira Code', monospace; /* 代码字体更有科技感 */
-  font-size: 13px;
+  font-size: 12px;
   word-break: break-all; /* 防止长字符串撑开表格 */
   color: var(--el-text-color-primary);
 }
@@ -118,14 +112,5 @@ const copyToClipboard = async (text) => {
 /* 只有鼠标滑过行时才显示复制按钮，保持界面清爽 */
 .prop-value-wrapper:hover .copy-btn {
   opacity: 1;
-}
-
-/* 深度适配深色模式的边框颜色 */
-:deep(.el-descriptions__border) {
-  border-color: var(--el-border-color-lighter);
-}
-:deep(.el-descriptions__label.is-bordered-label) {
-  background-color: var(--el-fill-color-light);
-  width: 100px; /* 固定 Key 的宽度 */
 }
 </style>

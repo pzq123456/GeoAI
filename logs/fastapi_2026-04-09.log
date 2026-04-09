@@ -1,0 +1,525 @@
+2026-04-09 17:03:52.786 | INFO     | __main__:sse_producers:31 - 收到请求 - Query: 找到 Christ Church 附近 5 公里的学校并对这些学校执行凸包分析。计算凸包与缓冲区的面积，比一比那个大？
+2026-04-09 17:03:55.380 | DEBUG    | src.tools.discovery:list_layers:32 - 已列出所有图层: ['schools']
+2026-04-09 17:03:55.380 | DEBUG    | __main__:sse_producers:54 - Status Update: Scanning layers...
+2026-04-09 17:03:57.912 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Christ Church
+2026-04-09 17:03:57.918 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 1 条匹配项
+2026-04-09 17:03:57.919 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:04:00.867 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Christ Church School
+2026-04-09 17:04:00.867 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 3 条匹配项
+2026-04-09 17:04:00.867 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:04:04.530 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Christ Church
+2026-04-09 17:04:04.535 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 1 条匹配项
+2026-04-09 17:04:04.536 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:04:07.088 | INFO     | src.tools.discovery:inspect_layer_metadata:14 - 检查图层元数据: schools
+2026-04-09 17:04:07.088 | DEBUG    | __main__:sse_producers:54 - Status Update: Inspecting metadata for [schools]...
+2026-04-09 17:04:10.496 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': 'Christ Church Pellon CofE VC Primary School'}
+2026-04-09 17:04:10.497 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 1 条
+2026-04-09 17:04:10.497 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:04:14.227 | INFO     | src.tools.visualization:add_to_map:15 - 地图上点请求: 图层=schools, ID=schools:HX2 0QQ
+2026-04-09 17:04:14.227 | SUCCESS  | src.tools.visualization:add_to_map:26 - 要素 schools:HX2 0QQ 已成功加入渲染队列
+2026-04-09 17:04:14.227 | DEBUG    | __main__:sse_producers:54 - Status Update: 📍 正在尝试将要素 schools:HX2 0QQ 标点到地图...
+2026-04-09 17:04:19.399 | INFO     | src.tools.analysis:spatial_query_nearby:30 - 开始空间邻近查询: [schools -> schools @ 5000.0m]
+2026-04-09 17:04:19.399 | DEBUG    | src.tools.analysis:spatial_query_nearby:50 - [schools -> schools @ 5000.0m]: 源要素投影面积 = 0.00 m²
+2026-04-09 17:04:19.399 | DEBUG    | src.tools.analysis:spatial_query_nearby:65 - [schools -> schools @ 5000.0m]: 已推送缓冲区可视化队列
+2026-04-09 17:04:19.407 | DEBUG    | src.tools.analysis:spatial_query_nearby:69 - [schools -> schools @ 5000.0m]: 目标图层加载成功，共 102 个候选要素
+2026-04-09 17:04:19.408 | INFO     | src.tools.analysis:spatial_query_nearby:80 - [schools -> schools @ 5000.0m]: 检索完成，命中数量 = 29
+2026-04-09 17:04:19.409 | DEBUG    | __main__:sse_producers:54 - Status Update: 🔍 启动空间分析 [schools -> schools @ 5000.0m]...
+2026-04-09 17:04:33.177 | INFO     | src.tools.analysis:calculate_group_convex_hull:132 - 开始计算凸包: schools, 要素数: 28
+2026-04-09 17:04:33.207 | WARNING  | src.tools.analysis:calculate_group_convex_hull:144 - 凸包计算中止: 有效点数 0 不足 3 个
+2026-04-09 17:04:33.207 | DEBUG    | __main__:sse_producers:54 - Status Update: 🛠️ 正在计算 28 个要素的边界包络...
+2026-04-09 17:04:36.707 | DEBUG    | src.tools.analysis:universal_measure_by_ref:112 - 要素 schools:HX2 0QQ 投影完成，开始计算物理指标
+2026-04-09 17:04:36.708 | DEBUG    | __main__:sse_producers:54 - Status Update: 📐 正在测量要素 schools:HX2 0QQ...
+2026-04-09 17:04:38.916 | DEBUG    | src.tools.visualization:get_map_inventory:36 - 执行地图库存自检
+2026-04-09 17:04:41.143 | INFO     | src.tools.visualization:clear_visual_staging:45 - 已手动清空地图渲染队列
+2026-04-09 17:04:41.143 | DEBUG    | __main__:sse_producers:54 - Status Update: 🧹 已清空所有可视化图层。
+2026-04-09 17:05:03.608 | SUCCESS  | __main__:sse_producers:80 - GIS 分析任务圆满完成
+2026-04-09 17:06:20.277 | INFO     | __main__:sse_producers:31 - 收到请求 - Query: 找到 Trinity Sixth Form Academy 附近 5 公里的学校并对这些学校执行凸包分析。计算凸包与缓冲区的面积，比一比那个大？
+2026-04-09 17:06:22.647 | DEBUG    | src.tools.discovery:list_layers:32 - 已列出所有图层: ['schools']
+2026-04-09 17:06:22.647 | DEBUG    | __main__:sse_producers:54 - Status Update: Scanning layers...
+2026-04-09 17:06:25.525 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity Sixth Form Academy
+2026-04-09 17:06:25.525 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 0 条匹配项
+2026-04-09 17:06:25.525 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:06:28.179 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity
+2026-04-09 17:06:28.184 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 8 条匹配项
+2026-04-09 17:06:28.184 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:06:31.252 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Sixth Form Academy
+2026-04-09 17:06:31.252 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 0 条匹配项
+2026-04-09 17:06:31.252 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:06:35.076 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Sixth Form
+2026-04-09 17:06:35.076 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 1 条匹配项
+2026-04-09 17:06:35.076 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:06:38.567 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity Academy
+2026-04-09 17:06:38.572 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 0 条匹配项
+2026-04-09 17:06:38.573 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:06:41.779 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': 'Trinity Academy Halifax'}
+2026-04-09 17:06:41.779 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 1 条
+2026-04-09 17:06:41.779 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:06:46.410 | INFO     | src.tools.analysis:spatial_query_nearby:30 - 开始空间邻近查询: [schools -> schools @ 5000.0m]
+2026-04-09 17:06:46.410 | DEBUG    | src.tools.analysis:spatial_query_nearby:50 - [schools -> schools @ 5000.0m]: 源要素投影面积 = 0.00 m²
+2026-04-09 17:06:46.410 | DEBUG    | src.tools.analysis:spatial_query_nearby:65 - [schools -> schools @ 5000.0m]: 已推送缓冲区可视化队列
+2026-04-09 17:06:46.422 | DEBUG    | src.tools.analysis:spatial_query_nearby:69 - [schools -> schools @ 5000.0m]: 目标图层加载成功，共 102 个候选要素
+2026-04-09 17:06:46.423 | INFO     | src.tools.analysis:spatial_query_nearby:80 - [schools -> schools @ 5000.0m]: 检索完成，命中数量 = 13
+2026-04-09 17:06:46.424 | DEBUG    | __main__:sse_producers:54 - Status Update: 🔍 启动空间分析 [schools -> schools @ 5000.0m]...
+2026-04-09 17:06:54.391 | INFO     | src.tools.analysis:calculate_group_convex_hull:132 - 开始计算凸包: schools, 要素数: 13
+2026-04-09 17:06:54.414 | SUCCESS  | src.tools.analysis:calculate_group_convex_hull:164 - 凸包计算成功: 面积 23.02 km²
+2026-04-09 17:06:54.414 | DEBUG    | __main__:sse_producers:54 - Status Update: 🛠️ 正在计算 13 个要素的边界包络...
+2026-04-09 17:06:57.767 | DEBUG    | src.tools.analysis:universal_measure_by_ref:112 - 要素 schools:HX2 9TZ 投影完成，开始计算物理指标
+2026-04-09 17:06:57.767 | DEBUG    | __main__:sse_producers:54 - Status Update: 📐 正在测量要素 schools:HX2 9TZ...
+2026-04-09 17:06:59.880 | DEBUG    | src.tools.visualization:get_map_inventory:36 - 执行地图库存自检
+2026-04-09 17:07:22.597 | SUCCESS  | __main__:sse_producers:80 - GIS 分析任务圆满完成
+2026-04-09 17:15:49.617 | INFO     | __main__:sse_producers:31 - 收到请求 - Query: 找到 Trinity Sixth Form Academy 附近 5 公里的学校并对这些学校执行凸包分析。计算凸包与缓冲区的面积，比一比那个大？
+2026-04-09 17:15:52.316 | DEBUG    | src.tools.discovery:list_layers:32 - 已列出所有图层: ['schools']
+2026-04-09 17:15:52.316 | DEBUG    | __main__:sse_producers:54 - Status Update: Scanning layers...
+2026-04-09 17:15:54.810 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity Sixth Form Academy
+2026-04-09 17:15:54.810 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 0 条匹配项
+2026-04-09 17:15:54.810 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:15:57.252 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity
+2026-04-09 17:15:57.261 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 8 条匹配项
+2026-04-09 17:15:57.261 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:15:59.989 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity Sixth Form
+2026-04-09 17:15:59.989 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 0 条匹配项
+2026-04-09 17:15:59.989 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:16:02.432 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Sixth Form Academy
+2026-04-09 17:16:02.432 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 0 条匹配项
+2026-04-09 17:16:02.432 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:16:05.452 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Sixth Form
+2026-04-09 17:16:05.458 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 1 条匹配项
+2026-04-09 17:16:05.458 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:16:08.794 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Trinity.*Academy.*Halifax'}}
+2026-04-09 17:16:08.796 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:16:08.796 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:16:12.094 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Trinity.*Academy'}}
+2026-04-09 17:16:12.094 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:16:12.094 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:16:14.972 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Trinity'}}
+2026-04-09 17:16:14.972 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:16:14.972 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:16:17.407 | INFO     | src.tools.discovery:inspect_layer_metadata:14 - 检查图层元数据: schools
+2026-04-09 17:16:17.407 | DEBUG    | __main__:sse_producers:54 - Status Update: Inspecting metadata for [schools]...
+2026-04-09 17:16:20.264 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Trinity.*Sixth.*Form.*Academy'}}
+2026-04-09 17:16:20.280 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:16:20.280 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:16:23.228 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Sixth.*Form.*Academy'}}
+2026-04-09 17:16:23.232 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:16:23.232 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:16:26.534 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Sixth.*Form'}}
+2026-04-09 17:16:26.543 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:16:26.543 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:16:29.690 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Sixth'}}
+2026-04-09 17:16:29.690 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:16:29.690 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:16:32.395 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Academy'}}
+2026-04-09 17:16:32.396 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:16:32.396 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:16:35.566 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Trinity.*Halifax'}}
+2026-04-09 17:16:35.566 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:16:35.566 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:16:38.692 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Trinity.*Academy.*Halifax'}}
+2026-04-09 17:16:38.703 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:16:38.703 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:16:41.394 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Trinity.*Academy.*Halifax'}}
+2026-04-09 17:16:41.394 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:16:41.394 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:16:44.317 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity Academy Halifax
+2026-04-09 17:16:44.317 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 0 条匹配项
+2026-04-09 17:16:44.317 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:16:47.174 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity Academy
+2026-04-09 17:16:47.190 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 0 条匹配项
+2026-04-09 17:16:47.190 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:16:50.306 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity
+2026-04-09 17:16:50.306 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 8 条匹配项
+2026-04-09 17:16:50.306 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:16:55.076 | INFO     | src.tools.analysis:spatial_query_nearby:30 - 开始空间邻近查询: [schools -> schools @ 5000.0m]
+2026-04-09 17:16:55.080 | DEBUG    | src.tools.analysis:spatial_query_nearby:50 - [schools -> schools @ 5000.0m]: 源要素投影面积 = 0.00 m²
+2026-04-09 17:16:55.080 | DEBUG    | src.tools.analysis:spatial_query_nearby:65 - [schools -> schools @ 5000.0m]: 已推送缓冲区可视化队列
+2026-04-09 17:16:55.082 | DEBUG    | src.tools.analysis:spatial_query_nearby:69 - [schools -> schools @ 5000.0m]: 目标图层加载成功，共 102 个候选要素
+2026-04-09 17:16:55.083 | INFO     | src.tools.analysis:spatial_query_nearby:80 - [schools -> schools @ 5000.0m]: 检索完成，命中数量 = 13
+2026-04-09 17:16:55.083 | DEBUG    | __main__:sse_producers:54 - Status Update: 🔍 启动空间分析 [schools -> schools @ 5000.0m]...
+2026-04-09 17:17:03.027 | INFO     | src.tools.analysis:calculate_group_convex_hull:132 - 开始计算凸包: schools, 要素数: 13
+2026-04-09 17:17:03.043 | WARNING  | src.tools.analysis:calculate_group_convex_hull:144 - 凸包计算中止: 有效点数 0 不足 3 个
+2026-04-09 17:17:03.043 | DEBUG    | __main__:sse_producers:54 - Status Update: 🛠️ 正在计算 13 个要素的边界包络...
+2026-04-09 17:17:06.376 | DEBUG    | src.tools.analysis:universal_measure_by_ref:112 - 要素 schools:HX2 9TZ 投影完成，开始计算物理指标
+2026-04-09 17:17:06.377 | DEBUG    | __main__:sse_producers:54 - Status Update: 📐 正在测量要素 schools:HX2 9TZ...
+2026-04-09 17:17:12.873 | INFO     | src.tools.analysis:calculate_group_convex_hull:132 - 开始计算凸包: schools, 要素数: 13
+2026-04-09 17:17:12.890 | SUCCESS  | src.tools.analysis:calculate_group_convex_hull:164 - 凸包计算成功: 面积 23.02 km²
+2026-04-09 17:17:12.890 | DEBUG    | __main__:sse_producers:54 - Status Update: 🛠️ 正在计算 13 个要素的边界包络...
+2026-04-09 17:17:16.604 | INFO     | src.tools.visualization:add_to_map:15 - 地图上点请求: 图层=schools, ID=schools:HX2 9TZ
+2026-04-09 17:17:16.622 | SUCCESS  | src.tools.visualization:add_to_map:26 - 要素 schools:HX2 9TZ 已成功加入渲染队列
+2026-04-09 17:17:16.624 | DEBUG    | __main__:sse_producers:54 - Status Update: 📍 正在尝试将要素 schools:HX2 9TZ 标点到地图...
+2026-04-09 17:17:18.558 | DEBUG    | src.tools.visualization:get_map_inventory:36 - 执行地图库存自检
+2026-04-09 17:17:30.777 | SUCCESS  | __main__:sse_producers:80 - GIS 分析任务圆满完成
+2026-04-09 17:19:32.092 | INFO     | __main__:sse_producers:31 - 收到请求 - Query: 做一下服务区分析？
+2026-04-09 17:19:40.156 | DEBUG    | __main__:sse_producers:54 - Status Update: 🧠 正在进行空间均衡度语义分析...
+2026-04-09 17:19:59.367 | SUCCESS  | __main__:sse_producers:80 - GIS 分析任务圆满完成
+2026-04-09 17:28:56.757 | INFO     | __main__:sse_producers:31 - 收到请求 - Query: 找到 Trinity Sixth Form Academy 附近 5 公里的学校并对这些学校执行做一下服务区分析？
+2026-04-09 17:28:59.012 | DEBUG    | src.tools.discovery:list_layers:32 - 已列出所有图层: ['schools']
+2026-04-09 17:28:59.012 | DEBUG    | __main__:sse_producers:54 - Status Update: Scanning layers...
+2026-04-09 17:29:01.317 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity Sixth Form Academy
+2026-04-09 17:29:01.337 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 0 条匹配项
+2026-04-09 17:29:01.337 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:29:03.890 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity Sixth Form
+2026-04-09 17:29:03.893 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 0 条匹配项
+2026-04-09 17:29:03.893 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:29:06.106 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity
+2026-04-09 17:29:06.113 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 8 条匹配项
+2026-04-09 17:29:06.113 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:29:09.066 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity Academy Halifax
+2026-04-09 17:29:09.081 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 0 条匹配项
+2026-04-09 17:29:09.081 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:29:12.274 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Trinity.*Academy.*Halifax'}}
+2026-04-09 17:29:12.274 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:12.278 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:14.850 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Trinity.*Sixth.*Form'}}
+2026-04-09 17:29:14.850 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:14.850 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:17.548 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Trinity'}}
+2026-04-09 17:29:17.552 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:17.554 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:19.532 | INFO     | src.tools.discovery:inspect_layer_metadata:14 - 检查图层元数据: schools
+2026-04-09 17:29:19.532 | DEBUG    | __main__:sse_producers:54 - Status Update: Inspecting metadata for [schools]...
+2026-04-09 17:29:22.212 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Trinity.*Academy'}}
+2026-04-09 17:29:22.212 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:22.212 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:24.966 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Trinity'}}
+2026-04-09 17:29:24.981 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:24.981 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:27.589 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Sixth.*Form'}}
+2026-04-09 17:29:27.603 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:27.603 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:29.931 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Sixth'}}
+2026-04-09 17:29:29.931 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:29.931 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:32.762 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Phase': {'$regex': 'Sixth'}}
+2026-04-09 17:29:32.766 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:32.768 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:35.373 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Phase': {'$regex': 'Sixth.*Form'}}
+2026-04-09 17:29:35.375 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:35.375 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:37.873 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Phase': {'$regex': 'Sixth.*Form.*Academy'}}
+2026-04-09 17:29:37.886 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:37.886 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:41.505 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': 'Academy'}}
+2026-04-09 17:29:41.505 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:41.505 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:44.988 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Status': {'$regex': 'Academy'}}
+2026-04-09 17:29:44.998 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:45.000 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:47.957 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Trust name': {'$regex': 'Trinity'}}
+2026-04-09 17:29:47.961 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:47.961 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:50.518 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Sponsor name': {'$regex': 'Trinity'}}
+2026-04-09 17:29:50.522 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:50.522 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:53.135 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Trust name': {'$regex': 'Trinity.*Multi.*Academy.*Trust'}}
+2026-04-09 17:29:53.137 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:53.137 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:55.782 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Sponsor name': {'$regex': 'Trinity.*Multi.*Academy.*Trust'}}
+2026-04-09 17:29:55.795 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:55.795 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:29:58.727 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Trust name': {'$regex': 'Trinity.*Academy.*Trust'}}
+2026-04-09 17:29:58.727 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:29:58.727 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:01.445 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Sponsor name': {'$regex': 'Trinity.*Academy.*Trust'}}
+2026-04-09 17:30:01.449 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:01.449 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:04.352 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Trust name': {'$regex': 'Trinity.*Trust'}}
+2026-04-09 17:30:04.352 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:04.356 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:06.949 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Sponsor name': {'$regex': 'Trinity.*Trust'}}
+2026-04-09 17:30:06.956 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:06.958 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:09.805 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Trust name': {'$regex': 'Trinity'}}
+2026-04-09 17:30:09.809 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:09.809 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:13.671 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Sponsor name': {'$regex': 'Trinity'}}
+2026-04-09 17:30:13.685 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:13.685 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:16.578 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Trust name': {'$regex': 'Multi.*Academy.*Trust'}}
+2026-04-09 17:30:16.580 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:16.580 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:19.635 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Sponsor name': {'$regex': 'Multi.*Academy.*Trust'}}
+2026-04-09 17:30:19.635 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:19.635 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:22.777 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Trust name': {'$regex': 'Academy.*Trust'}}
+2026-04-09 17:30:22.789 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:22.789 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:25.949 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Sponsor name': {'$regex': 'Academy.*Trust'}}
+2026-04-09 17:30:25.949 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:25.949 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:28.691 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Trust name': {'$regex': 'Academy'}}
+2026-04-09 17:30:28.693 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:28.693 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:31.549 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Sponsor name': {'$regex': 'Academy'}}
+2026-04-09 17:30:31.549 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:31.549 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:34.187 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Trust name': {'$regex': 'Trust'}}
+2026-04-09 17:30:34.194 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:34.194 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:36.812 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Sponsor name': {'$regex': 'Trust'}}
+2026-04-09 17:30:36.819 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:36.819 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:39.386 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Trust name': {'$regex': '.*'}}
+2026-04-09 17:30:39.386 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:39.399 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:42.185 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Sponsor name': {'$regex': '.*'}}
+2026-04-09 17:30:42.185 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:42.191 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:45.085 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': {'$regex': '.*'}}
+2026-04-09 17:30:45.085 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:45.085 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:47.920 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Phase': {'$regex': '.*'}}
+2026-04-09 17:30:47.923 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:47.923 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:50.606 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Status': {'$regex': '.*'}}
+2026-04-09 17:30:50.606 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:50.606 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:53.196 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Head title': {'$regex': '.*'}}
+2026-04-09 17:30:53.205 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:53.205 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:55.767 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Head name': {'$regex': '.*'}}
+2026-04-09 17:30:55.768 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:55.768 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:30:58.554 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Address 1': {'$regex': '.*'}}
+2026-04-09 17:30:58.554 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:30:58.558 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:31:01.728 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Address 2': {'$regex': '.*'}}
+2026-04-09 17:31:01.728 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:31:01.728 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:31:04.453 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Address 4': {'$regex': '.*'}}
+2026-04-09 17:31:04.455 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:31:04.455 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:31:07.382 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Postcode': {'$regex': '.*'}}
+2026-04-09 17:31:07.382 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:31:07.382 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:31:10.101 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'School ward': {'$regex': '.*'}}
+2026-04-09 17:31:10.103 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:31:10.103 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:31:14.060 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Telephone': {'$regex': '.*'}}
+2026-04-09 17:31:14.062 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:31:14.062 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:31:17.256 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Website': {'$regex': '.*'}}
+2026-04-09 17:31:17.256 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 0 条
+2026-04-09 17:31:17.256 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:31:17.375 | ERROR    | __main__:sse_producers:85 - GIS 分析失败: The next request would exceed the request_limit of 50
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "C:\Users\admin\Desktop\personal\GeoAI\src\main.py", line 93, in <module>
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+    │       │   └ <fastapi.applications.FastAPI object at 0x00000168E33D39B0>
+    │       └ <function run at 0x00000168E2596D40>
+    └ <module 'uvicorn' from 'C:\\Users\\admin\\Desktop\\personal\\GeoAI\\.venv\\Lib\\site-packages\\uvicorn\\__init__.py'>
+
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\uvicorn\main.py", line 606, in run
+    server.run()
+    │      └ <function Server.run at 0x00000168E2597100>
+    └ <uvicorn.server.Server object at 0x00000168FF2ACCE0>
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\uvicorn\server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           │           │    │             │                      │    │      └ <function Config.get_loop_factory at 0x00000168E2596A20>
+           │           │    │             │                      │    └ <uvicorn.config.Config object at 0x00000168FF2AC590>
+           │           │    │             │                      └ <uvicorn.server.Server object at 0x00000168FF2ACCE0>
+           │           │    │             └ None
+           │           │    └ <function Server.serve at 0x00000168E25971A0>
+           │           └ <uvicorn.server.Server object at 0x00000168FF2ACCE0>
+           └ <function run at 0x00000168DB4D5F80>
+  File "C:\Users\admin\AppData\Roaming\uv\python\cpython-3.12.13-windows-x86_64-none\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x00000168FF39D1C0>
+           │      └ <function Runner.run at 0x00000168DD20FA60>
+           └ <asyncio.runners.Runner object at 0x00000168FF2AC260>
+  File "C:\Users\admin\AppData\Roaming\uv\python\cpython-3.12.13-windows-x86_64-none\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\uvi...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x00000168DD20D6C0>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x00000168FF2AC260>
+  File "C:\Users\admin\AppData\Roaming\uv\python\cpython-3.12.13-windows-x86_64-none\Lib\asyncio\base_events.py", line 678, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x00000168DD2D18A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\admin\AppData\Roaming\uv\python\cpython-3.12.13-windows-x86_64-none\Lib\asyncio\windows_events.py", line 322, in run_forever
+    super().run_forever()
+  File "C:\Users\admin\AppData\Roaming\uv\python\cpython-3.12.13-windows-x86_64-none\Lib\asyncio\base_events.py", line 645, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x00000168DD20F420>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\admin\AppData\Roaming\uv\python\cpython-3.12.13-windows-x86_64-none\Lib\asyncio\base_events.py", line 1999, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x00000168DD1396C0>
+    └ <Handle Task.task_wakeup(<Future cancelled>)>
+  File "C:\Users\admin\AppData\Roaming\uv\python\cpython-3.12.13-windows-x86_64-none\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future cancelled>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future cancelled>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future cancelled>)>
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\starlette\responses.py", line 277, in wrap
+    await func()
+          └ functools.partial(<bound method StreamingResponse.stream_response of <starlette.responses.StreamingResponse object at 0x00000...
+
+> File "C:\Users\admin\Desktop\personal\GeoAI\src\main.py", line 60, in sse_producers
+    result = await run_task
+                   └ <Task finished name='Task-9' coro=<AbstractAgent.run() done, defined at C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-...
+
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_ai\agent\abstract.py", line 331, in run
+    node = await agent_run.next(node)  # pyright: ignore[reportArgumentType]
+                 │         │    └ ModelRequestNode(request=ModelRequest(parts=[ToolReturnPart(tool_name='filter_features_by_property', content='{"total_found":...
+                 │         └ <function AgentRun.next at 0x00000168E328DA80>
+                 └ <AgentRun result=<run not finished> usage=RunUsage(input_tokens=312407, cache_read_tokens=301760, output_tokens=3314, details...
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_ai\run.py", line 356, in next
+    return await self._run_node_with_hooks(node, self._advance_graph)
+                 │    │                    │     │    └ <function AgentRun._advance_graph at 0x00000168E328D8A0>
+                 │    │                    │     └ <AgentRun result=<run not finished> usage=RunUsage(input_tokens=312407, cache_read_tokens=301760, output_tokens=3314, details...
+                 │    │                    └ ModelRequestNode(request=ModelRequest(parts=[ToolReturnPart(tool_name='filter_features_by_property', content='{"total_found":...
+                 │    └ <function AgentRun._run_node_with_hooks at 0x00000168E328D9E0>
+                 └ <AgentRun result=<run not finished> usage=RunUsage(input_tokens=312407, cache_read_tokens=301760, output_tokens=3314, details...
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_ai\run.py", line 282, in _run_node_with_hooks
+    return await self._wrap_and_advance(run_context, node, step_fn)
+                 │    │                 │            │     └ <bound method AgentRun._advance_graph of <AgentRun result=<run not finished> usage=RunUsage(input_tokens=312407, cache_read_t...
+                 │    │                 │            └ ModelRequestNode(request=ModelRequest(parts=[ToolReturnPart(tool_name='filter_features_by_property', content='{"total_found":...
+                 │    │                 └ RunContext(deps=GISDependencies(loader=<src.schema.GeoDataLoader object at 0x00000168FEFBA360>, status_queue=<Queue at 0x168f...
+                 │    └ <function AgentRun._wrap_and_advance at 0x00000168E328D940>
+                 └ <AgentRun result=<run not finished> usage=RunUsage(input_tokens=312407, cache_read_tokens=301760, output_tokens=3314, details...
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_ai\run.py", line 262, in _wrap_and_advance
+    result = await cap.on_node_run_error(run_context, node=node, error=e)
+                   │   │                 │                 └ ModelRequestNode(request=ModelRequest(parts=[ToolReturnPart(tool_name='filter_features_by_property', content='{"total_found":...
+                   │   │                 └ RunContext(deps=GISDependencies(loader=<src.schema.GeoDataLoader object at 0x00000168FEFBA360>, status_queue=<Queue at 0x168f...
+                   │   └ <function CombinedCapability.on_node_run_error at 0x00000168E0C6F600>
+                   └ CombinedCapability(capabilities=[])
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_ai\capabilities\combined.py", line 215, in on_node_run_error
+    raise error
+          └ UsageLimitExceeded('The next request would exceed the request_limit of 50')
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_ai\run.py", line 260, in _wrap_and_advance
+    result = await cap.wrap_node_run(run_context, node=node, handler=step_fn)
+                   │   │             │                 │             └ <bound method AgentRun._advance_graph of <AgentRun result=<run not finished> usage=RunUsage(input_tokens=312407, cache_read_t...
+                   │   │             │                 └ ModelRequestNode(request=ModelRequest(parts=[ToolReturnPart(tool_name='filter_features_by_property', content='{"total_found":...
+                   │   │             └ RunContext(deps=GISDependencies(loader=<src.schema.GeoDataLoader object at 0x00000168FEFBA360>, status_queue=<Queue at 0x168f...
+                   │   └ <function CombinedCapability.wrap_node_run at 0x00000168E0C6F560>
+                   └ CombinedCapability(capabilities=[])
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_ai\capabilities\combined.py", line 201, in wrap_node_run
+    return await chain(node)
+                 │     └ ModelRequestNode(request=ModelRequest(parts=[ToolReturnPart(tool_name='filter_features_by_property', content='{"total_found":...
+                 └ <bound method AgentRun._advance_graph of <AgentRun result=<run not finished> usage=RunUsage(input_tokens=312407, cache_read_t...
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_ai\run.py", line 238, in _advance_graph
+    task = await self._graph_run.next(task)
+                 │    │          │    └ [GraphTaskRequest(node_id='ModelRequestNode', inputs=ModelRequestNode(request=ModelRequest(parts=[ToolReturnPart(tool_name='f...
+                 │    │          └ <function GraphRun.next at 0x00000168E3244CC0>
+                 │    └ <pydantic_graph.beta.graph.GraphRun object at 0x00000168FF505DF0>
+                 └ <AgentRun result=<run not finished> usage=RunUsage(input_tokens=312407, cache_read_tokens=301760, output_tokens=3314, details...
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_graph\beta\graph.py", line 497, in next
+    return await anext(self)
+                       └ <pydantic_graph.beta.graph.GraphRun object at 0x00000168FF505DF0>
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_graph\beta\graph.py", line 471, in __anext__
+    self._next = await self._iterator.asend(self._next)
+    │    │             │    │         │     │    └ [GraphTask(node_id='ModelRequestNode', inputs=ModelRequestNode(request=ModelRequest(parts=[ToolReturnPart(tool_name='filter_f...
+    │    │             │    │         │     └ <pydantic_graph.beta.graph.GraphRun object at 0x00000168FF505DF0>
+    │    │             │    │         └ <method 'asend' of 'async_generator' objects>
+    │    │             │    └ <async_generator object _GraphIterator.iter_graph at 0x00000168FF4907C0>
+    │    │             └ <pydantic_graph.beta.graph.GraphRun object at 0x00000168FF505DF0>
+    │    └ [GraphTask(node_id='ModelRequestNode', inputs=ModelRequestNode(request=ModelRequest(parts=[ToolReturnPart(tool_name='filter_f...
+    └ <pydantic_graph.beta.graph.GraphRun object at 0x00000168FF505DF0>
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_graph\beta\graph.py", line 580, in iter_graph
+    raise task_result.error
+          │           └ UsageLimitExceeded('The next request would exceed the request_limit of 50')
+          └ _GraphTaskResult(source=GraphTask(node_id='ModelRequestNode', inputs=ModelRequestNode(request=ModelRequest(parts=[ToolReturnP...
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_graph\beta\graph.py", line 754, in _run_tracked_task
+    result = await self._run_task(t_)
+                   │    │         └ GraphTask(node_id='ModelRequestNode', inputs=ModelRequestNode(request=ModelRequest(parts=[ToolReturnPart(tool_name='filter_fe...
+                   │    └ <function _GraphIterator._run_task at 0x00000168E3245940>
+                   └ _GraphIterator(graph=<pydantic_graph.beta.graph.Graph object at 0x00000168FF241EE0
+                     stateDiagram-v2
+                       UserPromptNode
+                       state d...
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_graph\beta\graph.py", line 795, in _run_task
+    output = await node.call(step_context)
+                   │    │    └ StepContext(_state=GraphAgentState(message_history=[ModelRequest(parts=[UserPromptPart(content='找到 Trinity Sixth Form Academy...
+                   │    └ <property object at 0x00000168E31F4DB0>
+                   └ NodeStep(id='ModelRequestNode', _call=<bound method NodeStep._call_node of ...>, label=None)
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_graph\beta\step.py", line 253, in _call_node
+    return await node.run(GraphRunContext(state=ctx.state, deps=ctx.deps))
+                 │    │   │                     │   │           │   └ <property object at 0x00000168E31F44A0>
+                 │    │   │                     │   │           └ StepContext(_state=GraphAgentState(message_history=[ModelRequest(parts=[UserPromptPart(content='找到 Trinity Sixth Form Academy...
+                 │    │   │                     │   └ <property object at 0x00000168E31F40E0>
+                 │    │   │                     └ StepContext(_state=GraphAgentState(message_history=[ModelRequest(parts=[UserPromptPart(content='找到 Trinity Sixth Form Academy...
+                 │    │   └ <class 'pydantic_graph.nodes.GraphRunContext'>
+                 │    └ <function ModelRequestNode.run at 0x00000168E3276020>
+                 └ ModelRequestNode(request=ModelRequest(parts=[ToolReturnPart(tool_name='filter_features_by_property', content='{"total_found":...
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_ai\_agent_graph.py", line 534, in run
+    return await self._make_request(ctx)
+                 │    │             └ GraphRunContext(state=GraphAgentState(message_history=[ModelRequest(parts=[UserPromptPart(content='找到 Trinity Sixth Form Acad...
+                 │    └ <function ModelRequestNode._make_request at 0x00000168E32762A0>
+                 └ ModelRequestNode(request=ModelRequest(parts=[ToolReturnPart(tool_name='filter_features_by_property', content='{"total_found":...
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_ai\_agent_graph.py", line 710, in _make_request
+    model, model_settings, model_request_parameters, message_history, run_context = await self._prepare_request(
+                                                                                          │    └ <function ModelRequestNode._prepare_request at 0x00000168E3276340>
+                                                                                          └ ModelRequestNode(request=ModelRequest(parts=[ToolReturnPart(tool_name='filter_features_by_property', content='{"total_found":...
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_ai\_agent_graph.py", line 856, in _prepare_request
+    ctx.deps.usage_limits.check_before_request(usage)
+    │   │    │            │                    └ RunUsage(input_tokens=312407, cache_read_tokens=301760, output_tokens=3314, details={'prompt_cache_hit_tokens': 301760, 'prom...
+    │   │    │            └ <function UsageLimits.check_before_request at 0x00000168E0990180>
+    │   │    └ UsageLimits()
+    │   └ GraphAgentDeps(user_deps=GISDependencies(loader=<src.schema.GeoDataLoader object at 0x00000168FEFBA360>, status_queue=<Queue ...
+    └ GraphRunContext(state=GraphAgentState(message_history=[ModelRequest(parts=[UserPromptPart(content='找到 Trinity Sixth Form Acad...
+  File "C:\Users\admin\Desktop\personal\GeoAI\.venv\Lib\site-packages\pydantic_ai\usage.py", line 382, in check_before_request
+    raise UsageLimitExceeded(f'The next request would exceed the request_limit of {request_limit}')
+          │                                                                        └ 50
+          └ <class 'pydantic_ai.exceptions.UsageLimitExceeded'>
+
+pydantic_ai.exceptions.UsageLimitExceeded: The next request would exceed the request_limit of 50
+2026-04-09 17:32:31.036 | INFO     | __main__:sse_producers:31 - 收到请求 - Query: 找到 Trinity Sixth Form Academy 附近 5 公里的学校并对这些学校执行做一下服务区分析？
+2026-04-09 17:32:33.138 | DEBUG    | src.tools.discovery:list_layers:32 - 已列出所有图层: ['schools']
+2026-04-09 17:32:33.138 | DEBUG    | __main__:sse_producers:54 - Status Update: Scanning layers...
+2026-04-09 17:32:35.961 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity Sixth Form Academy
+2026-04-09 17:32:35.963 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 0 条匹配项
+2026-04-09 17:32:35.964 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:32:37.968 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity
+2026-04-09 17:32:37.968 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 8 条匹配项
+2026-04-09 17:32:37.968 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:32:40.550 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity Academy Halifax
+2026-04-09 17:32:40.550 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 0 条匹配项
+2026-04-09 17:32:40.550 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:32:42.835 | INFO     | src.tools.discovery:search_features_fuzzy:41 - 模糊检索图层 schools, 关键词: Trinity Academy
+2026-04-09 17:32:42.840 | DEBUG    | src.tools.discovery:search_features_fuzzy:56 - 检索到 0 条匹配项
+2026-04-09 17:32:42.840 | DEBUG    | __main__:sse_producers:54 - Status Update: Fuzzy searching [schools]...
+2026-04-09 17:32:45.638 | INFO     | src.tools.discovery:filter_features_by_property:76 - 属性过滤图层 schools, 条件: {'Establishment': 'Trinity Academy Halifax'}
+2026-04-09 17:32:45.638 | INFO     | src.tools.discovery:filter_features_by_property:99 - 属性过滤完成，总计找到 1 条
+2026-04-09 17:32:45.638 | DEBUG    | __main__:sse_producers:54 - Status Update: Filtering [schools] by properties...
+2026-04-09 17:32:49.434 | INFO     | src.tools.analysis:spatial_query_nearby:30 - 开始空间邻近查询: [schools -> schools @ 5000.0m]
+2026-04-09 17:32:49.440 | DEBUG    | src.tools.analysis:spatial_query_nearby:50 - [schools -> schools @ 5000.0m]: 源要素投影面积 = 0.00 m²
+2026-04-09 17:32:49.440 | DEBUG    | src.tools.analysis:spatial_query_nearby:65 - [schools -> schools @ 5000.0m]: 已推送缓冲区可视化队列
+2026-04-09 17:32:49.443 | DEBUG    | src.tools.analysis:spatial_query_nearby:69 - [schools -> schools @ 5000.0m]: 目标图层加载成功，共 102 个候选要素
+2026-04-09 17:32:49.444 | INFO     | src.tools.analysis:spatial_query_nearby:80 - [schools -> schools @ 5000.0m]: 检索完成，命中数量 = 13
+2026-04-09 17:32:49.444 | DEBUG    | __main__:sse_producers:54 - Status Update: 🔍 启动空间分析 [schools -> schools @ 5000.0m]...
+2026-04-09 17:32:55.139 | INFO     | src.tools.analysis:calculate_group_convex_hull:132 - 开始计算凸包: schools, 要素数: 13
+2026-04-09 17:32:55.150 | SUCCESS  | src.tools.analysis:calculate_group_convex_hull:164 - 凸包计算成功: 面积 23.02 km²
+2026-04-09 17:32:55.150 | DEBUG    | __main__:sse_producers:54 - Status Update: 🛠️ 正在计算 13 个要素的边界包络...
+2026-04-09 17:33:00.996 | DEBUG    | __main__:sse_producers:54 - Status Update: 🧠 正在构建凸包约束下的空间模型...
+2026-04-09 17:33:03.587 | DEBUG    | src.tools.analysis:universal_measure_by_ref:112 - 要素 schools:HX2 9TZ 投影完成，开始计算物理指标
+2026-04-09 17:33:03.587 | DEBUG    | __main__:sse_producers:54 - Status Update: 📐 正在测量要素 schools:HX2 9TZ...
+2026-04-09 17:33:14.547 | SUCCESS  | __main__:sse_producers:80 - GIS 分析任务圆满完成
+2026-04-09 17:43:20.246 | INFO     | __main__:sse_producers:31 - 收到请求 - Query: 找到 Trinity Sixth Form Academy 附近 5 公里的学校并对这些学校执行做一下服务区分析？
+2026-04-09 17:43:22.076 | DEBUG    | src.tools.discovery:list_layers:18 - 已列出所有图层: ['schools']
+2026-04-09 17:43:22.076 | DEBUG    | __main__:sse_producers:54 - Status Update: Scanning layers...
+2026-04-09 17:43:24.381 | INFO     | src.tools.discovery:query_layer_features:35 - 综合检索: 图层=schools, query='Trinity Sixth Form Academy', criteria=None
+2026-04-09 17:43:24.386 | DEBUG    | __main__:sse_producers:54 - Status Update: 🔍 检索 [schools]: 'Trinity Sixth Form Academy'...
+2026-04-09 17:43:26.891 | INFO     | src.tools.discovery:query_layer_features:35 - 综合检索: 图层=schools, query='Trinity', criteria=None
+2026-04-09 17:43:26.893 | DEBUG    | __main__:sse_producers:54 - Status Update: 🔍 检索 [schools]: 'Trinity'...
+2026-04-09 17:43:30.122 | INFO     | src.tools.discovery:query_layer_features:35 - 综合检索: 图层=schools, query='None', criteria={'Trust name': 'Trinity'}
+2026-04-09 17:43:30.122 | SUCCESS  | src.tools.discovery:query_layer_features:121 - 检索完成，找到 8 条记录
+2026-04-09 17:43:30.122 | DEBUG    | __main__:sse_producers:54 - Status Update: 🔍 检索 [schools]: ''...
+2026-04-09 17:43:34.286 | INFO     | src.tools.analysis:spatial_query_nearby:30 - 开始空间邻近查询: [schools -> schools @ 5000.0m]
+2026-04-09 17:43:34.297 | DEBUG    | src.tools.analysis:spatial_query_nearby:50 - [schools -> schools @ 5000.0m]: 源要素投影面积 = 0.00 m²
+2026-04-09 17:43:34.297 | DEBUG    | src.tools.analysis:spatial_query_nearby:65 - [schools -> schools @ 5000.0m]: 已推送缓冲区可视化队列
+2026-04-09 17:43:34.297 | DEBUG    | src.tools.analysis:spatial_query_nearby:69 - [schools -> schools @ 5000.0m]: 目标图层加载成功，共 102 个候选要素
+2026-04-09 17:43:34.308 | INFO     | src.tools.analysis:spatial_query_nearby:80 - [schools -> schools @ 5000.0m]: 检索完成，命中数量 = 26
+2026-04-09 17:43:34.309 | DEBUG    | __main__:sse_producers:54 - Status Update: 🔍 启动空间分析 [schools -> schools @ 5000.0m]...
+2026-04-09 17:43:42.736 | DEBUG    | __main__:sse_producers:54 - Status Update: 🧠 正在构建凸包约束下的空间模型...
+2026-04-09 17:43:50.581 | INFO     | src.tools.analysis:calculate_group_convex_hull:132 - 开始计算凸包: schools, 要素数: 25
+2026-04-09 17:43:50.605 | SUCCESS  | src.tools.analysis:calculate_group_convex_hull:164 - 凸包计算成功: 面积 46.34 km²
+2026-04-09 17:43:50.606 | DEBUG    | __main__:sse_producers:54 - Status Update: 🛠️ 正在计算 25 个要素的边界包络...
+2026-04-09 17:44:07.837 | SUCCESS  | __main__:sse_producers:80 - GIS 分析任务圆满完成
