@@ -53,9 +53,9 @@ const mapStore = useMapStore();
 let deckMap = null;
 
 const initialViewState = {
-  longitude: -1.87815,
-  latitude: 53.71166,
-  zoom: 11,
+  longitude: 114.101275961,
+  latitude: 22.50870175,
+  zoom: 16,
 };
 
 const updateDeckLayers = () => {
