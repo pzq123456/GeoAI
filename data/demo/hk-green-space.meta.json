@@ -1,0 +1,17 @@
+{
+  "bbox": [
+    113.90872288,
+    22.20311771,
+    114.35393555,
+    22.52234447
+  ],
+  "counts": {
+    "park": 114,
+    "open_space": 86,
+    "country_park": 24
+  },
+  "total": 224,
+  "source_repo": "funglkf/hk-geodata",
+  "source_base_url": "https://raw.githubusercontent.com/funglkf/hk-geodata/main/static/json/",
+  "attribution": "Hong Kong Government open data (ODbL / open data licence)"
+}

@@ -1,0 +1,36 @@
+{
+  "bbox": [
+    113.8453,
+    22.15465,
+    114.43684,
+    22.5594
+  ],
+  "counts": {
+    "air_quality": 18,
+    "weather_station": 49,
+    "waste_facility": 21,
+    "recycling_point": 996,
+    "marine_park": 6,
+    "marine_reserve": 1,
+    "red_tide": 1608
+  },
+  "total": 2699,
+  "skipped": {},
+  "duplicates_removed": {
+    "recycling_point": 2,
+    "red_tide": 172
+  },
+  "coord_decimals": 5,
+  "sources": {
+    "air_quality": "Air_Quality_Monitoring_Network_of_Hong_Kong.geojson",
+    "weather_station": "Network_of_Weather_Stations_in_Hong_Kong.geojson",
+    "waste_facility": "Waste_Management_Facilities.geojson",
+    "recycling_point": "Recycling_Organisations_and_Collection_Points.geojson",
+    "marine_park": "Marine_Parks.geojson",
+    "marine_reserve": "Marine_Reserve.geojson",
+    "red_tide": "Red_Tide_Incident.geojson"
+  },
+  "source_repo": "funglkf/hk-geodata",
+  "source_base_url": "https://raw.githubusercontent.com/funglkf/hk-geodata/main/static/json/",
+  "attribution": "Hong Kong Government open data (ODbL / open data licence)"
+}

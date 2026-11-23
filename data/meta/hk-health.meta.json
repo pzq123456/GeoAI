@@ -1,0 +1,31 @@
+{
+  "bbox": [
+    113.85794,
+    22.2056,
+    114.27225,
+    22.53601
+  ],
+  "counts": {
+    "hospital": 44,
+    "clinic": 206,
+    "general_outpatient": 73,
+    "specialist_outpatient": 49,
+    "district_health_centre": 2,
+    "district_health_express": 11
+  },
+  "total": 385,
+  "skipped": {},
+  "duplicates_removed": {},
+  "coord_decimals": 5,
+  "sources": {
+    "hospital": "Hospitals_under_the_Hospital_Authority.geojson",
+    "clinic": "Clinics_Health_Centres_under_the_Department_of_Health.geojson",
+    "general_outpatient": "General_Outpatient_Clinics_under_the_Hospital_Authority.geojson",
+    "specialist_outpatient": "Specialist_Outpatient_Clinics_under_the_Hospital_Authority.geojson",
+    "district_health_centre": "District_Health_Centres.geojson",
+    "district_health_express": "District_Health_Centre_Expresses.geojson"
+  },
+  "source_repo": "funglkf/hk-geodata",
+  "source_base_url": "https://raw.githubusercontent.com/funglkf/hk-geodata/main/static/json/",
+  "attribution": "Hong Kong Government open data (ODbL / open data licence)"
+}

@@ -1,77 +1,54 @@
 <!-- docs/src/components/layer/LayerHeader.vue -->
 <template>
-  <div class="header-controls">
-    <!-- 折叠/展开图层列表按钮 -->
-    <el-tooltip content="Expand all layers" placement="top">
-      <el-icon @click="toggleAllDetails">
-        <component :is="allExpanded ? 'Minus' : 'Plus'" />
-      </el-icon>
-    </el-tooltip>
+  <div class="flex items-center justify-between rounded-t-lg bg-bg px-3 py-2.5">
+    <Tooltip content="Expand all layers">
+      <Button variant="ghost" size="icon" class="h-6 w-6" @click="toggleAllDetails">
+        <Minus v-if="allExpanded" :size="14" />
+        <Plus v-else :size="14" />
+      </Button>
+    </Tooltip>
 
-    <span class="name"> Layer Control </span>
-    <el-tooltip content="Expand Layer List" placement="top">
-      <el-icon @click="toggleLayerList" :class="{ 'expanded': !isLayerListVisible }">
-        <ArrowUpBold />
-      </el-icon>
-    </el-tooltip>
+    <span class="text-sm text-text-3">Layer Control</span>
+
+    <Tooltip content="Toggle layer list">
+      <Button
+        variant="ghost"
+        size="icon"
+        class="h-6 w-6 transition-transform"
+        :class="!isLayerListVisible ? 'rotate-180' : ''"
+        @click="toggleLayerList"
+      >
+        <ArrowUp :size="14" />
+      </Button>
+    </Tooltip>
   </div>
 </template>
 
-<script setup>
-import { defineProps, defineEmits, computed } from 'vue';
+<script setup lang="ts">
+import { computed } from 'vue'
+import { ArrowUp, Minus, Plus } from 'lucide-vue-next'
+import type { LayerItem } from '@/composables/useLayerGroup'
 
-const props = defineProps({
-  layers: {
-    type: Array,
-    required: true
-  },
-  isLayerListVisible: {
-    type: Boolean,
-    required: true
-  }
-});
+import Button from '@/components/ui/Button.vue'
+import Tooltip from '@/components/ui/Tooltip.vue'
 
-const emit = defineEmits(['toggle-all-details', 'toggle-layer-list']);
+const props = defineProps<{
+  layers: LayerItem[]
+  isLayerListVisible: boolean
+}>()
 
-const allExpanded = computed(() => props.layers.every(layer => layer.isExpanded));
+const emit = defineEmits<{
+  'toggle-all-details': []
+  'toggle-layer-list': []
+}>()
+
+const allExpanded = computed(() => props.layers.every(layer => layer.isExpanded))
 
 const toggleAllDetails = () => {
-  emit('toggle-all-details');
-};
+  emit('toggle-all-details')
+}
 
 const toggleLayerList = () => {
-  emit('toggle-layer-list');
-};
+  emit('toggle-layer-list')
+}
 </script>
-
-<style scoped>
-.header-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem;
-  background-color: var(--vp-c-bg);
-  border-radius: 8px 8px 0 0;
-}
-
-.header-controls .el-icon {
-  cursor: pointer;
-  color: var(--vp-c-text-2);
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.name {
-  font-size: 1rem;
-  color: var(--vp-c-text-3);
-}
-
-.name:hover {
-  color: var(--vp-c-text-1);
-  transition: color 0.3s ease;
-}
-
-.expanded {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease;
-}
-</style>

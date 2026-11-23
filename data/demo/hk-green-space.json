@@ -1,0 +1,4659 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": "park-eqyDcOtmUV",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15787523,
+                    22.24512201
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Ap Lei Chau Park",
+                "name_zh": "鴨脷洲公園",
+                "district": "SOUTHERN",
+                "address": "Ap Lei Chau Main Street, Ap Lei Chau, Hong Kong",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-CMBU6quaVP",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15543843,
+                    22.2448246
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Ap Lei Chau Waterfront Promenade",
+                "name_zh": "鴨脷洲海濱長廊",
+                "district": "SOUTHERN",
+                "address": "Ap Lei Chau Main Street, Ap Lei Chau, Hong Kong",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-YT3zdvHx8v",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15295796,
+                    22.24461204
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Ap Lei Chau Wind Tower Park",
+                "name_zh": "鴨脷洲風之塔公園",
+                "district": "SOUTHERN",
+                "address": "Lei Chi Road, Ap Lei Chau, Hong Kong",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-y5iTBUit2B",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16585196,
+                    22.27267183
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Bowen Road Garden",
+                "name_zh": "寶雲道花園",
+                "district": "WAN CHAI",
+                "address": "Bowen Road, Wan Chai",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-zjmZswl3Xs",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17156615,
+                    22.27002819
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Bowen Road Park",
+                "name_zh": "寶雲道公園",
+                "district": "WAN CHAI",
+                "address": "Bowen Road, Wan Chai",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-IpOIObANJV",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.98517,
+                    22.3753477
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Cafeteria Old Beach Sitting-out Area",
+                "name_zh": "舊咖啡灣休憩處",
+                "district": "TUEN MUN",
+                "address": "Cafeteria Old Beach, Tuen Mun",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-8r5ilZjxe6",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.14974796,
+                    22.28924856
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Central & Western District Promenade-Sheung Wan Section",
+                "name_zh": "中西區海濱長廊-上環段",
+                "district": "CENTRAL AND WESTERN",
+                "address": "Chung Kong Road, Sheung Wan",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-wJ8k0Jn1W0",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.13292458,
+                    22.35719612
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Central Kwai Chung Park",
+                "name_zh": "中葵涌公園",
+                "district": "KWAI TSING",
+                "address": "San Kwai Street, Kwai Chung",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-lWwGMeiCi8",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15896775,
+                    22.28733541
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Central Pier Waterfront",
+                "name_zh": "中環碼頭海濱長廊",
+                "district": "CENTRAL AND WESTERN",
+                "address": "Man Kwong Street, Central",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-awgISuDmyo",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.13602576,
+                    22.2895423
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Central and Western Distrcit Promenade - Western Wholesale Food Market Setcion",
+                "name_zh": "中西區海濱長廊 – 西區副食品批發市場段",
+                "district": "CENTRAL AND WESTERN",
+                "address": "8 Fung Mat Road, Sai Wan",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-updsx7Sxwa",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.23848686,
+                    22.26627749
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Chai Wan Park",
+                "name_zh": "柴灣公園",
+                "district": "EASTERN",
+                "address": "Chai Wan Park, Tsui Wan Street, Chai Wan",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-DzQ5mH05w5",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.11133484,
+                    22.34987903
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Cheung Fai Road Promenade",
+                "name_zh": "長輝路海濱花園",
+                "district": "KWAI TSING",
+                "address": "Cheung Fai Road, Tsing Yi, N.T.",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-cyGZCbLLIT",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17399032,
+                    22.33887904
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Cornwall Street Park",
+                "name_zh": "歌和老街公園",
+                "district": "SHAM SHUI PO",
+                "address": "17 Cornwall Street, Kowloon Tong, Kowloon",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-AOB3WlF5Sl",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.035859,
+                    22.20311771
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Don Bosco Road Garden",
+                "name_zh": "思高路花園",
+                "district": "ISLANDS",
+                "address": "Don Bosco Road, Cheung Chau",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-kMdx2XRzRD",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.18918445,
+                    22.28792912
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "East Coast Park (Phase 1)",
+                "name_zh": "東岸公園 (第一期)",
+                "district": "WAN CHAI",
+                "address": "East Coast Park (Phase 1)",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-4WX0os0I1H",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.19805529,
+                    22.34238515
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Fung Tak Park",
+                "name_zh": "鳳德公園",
+                "district": "WONG TAI SIN",
+                "address": "42, Fung Tak Road, Wong Tai Sin, Kowloon",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-Kkd5gIkkCx",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17240889,
+                    22.27978051
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Gloucester Road Garden",
+                "name_zh": "告士打道花園",
+                "district": "WAN CHAI",
+                "address": "Gloucester Road, Wan Chai",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-TDoJrCvbXu",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.26889435,
+                    22.31462998
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Hang Hau Garden",
+                "name_zh": "坑口花園",
+                "district": "SAI KUNG",
+                "address": "Tin Chau Road, Hang Hau, Tseung Kwan O. N.T.",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-8RKSlmKXaI",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.97024581,
+                    22.3855588
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Hoi Wong Road Garden",
+                "name_zh": "海皇路花園",
+                "district": "TUEN MUN",
+                "address": "Hoi Wong Road, Tuen Mun (Next to Tuen Mun Swimming Pool)",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-WuH88p6S47",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16138826,
+                    22.27730765
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Hong Kong Park",
+                "name_zh": "香港公園",
+                "district": "CENTRAL AND WESTERN",
+                "address": "19 Cotton Tree Drive, Central",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-ljyTAig9LJ",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.26099282,
+                    22.31414232
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Hong Kong Velodrome Park",
+                "name_zh": "香港單車館公園",
+                "district": "SAI KUNG",
+                "address": "105-107 Po Hong Road, Tseung Kwan O",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-aCyRzlBluT",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15592538,
+                    22.27768633
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Hong Kong Zoological & Botanical Gardens",
+                "name_zh": "香港動植物公園",
+                "district": "CENTRAL AND WESTERN",
+                "address": "Albany Road, Central & Western",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-Qu1wZDSIhb",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15627072,
+                    22.24476715
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Hung Shing Street Rest Garden",
+                "name_zh": "洪聖街休憩花園",
+                "district": "SOUTHERN",
+                "address": "Wai Fung Street, Ap Lei Chau",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-8SediT3jwt",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.12409225,
+                    22.36030108
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Jockey Club Kwai Shing Circuit Sitting-out Area",
+                "name_zh": "賽馬會葵盛圍休憩處",
+                "district": "KWAI TSING",
+                "address": "Kwai Shing Circuit, Kwai Chung",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-m4eTpovRSE",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.22180663,
+                    22.32984225
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Jordan Valley Park",
+                "name_zh": "佐敦谷公園",
+                "district": "KWUN TONG",
+                "address": "No.71, New Clear Water Bay Road",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-XbD9zTwZmi",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.20135491,
+                    22.32979782
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Kai Tak Avenue Park",
+                "name_zh": "啟德大道公園",
+                "district": "KOWLOON CITY",
+                "address": "16 Muk On Street, Kowloon City",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-e5Bw4T4luy",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.21620728,
+                    22.30493359
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Kai Tak Runway Park",
+                "name_zh": "啓德跑道公園",
+                "district": "KOWLOON CITY",
+                "address": "33 Shing Fung Road, Kai Tak, Kowloon ",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-t6UJegIWPD",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.207753,
+                    22.3111919
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Kai Tak Sky Garden",
+                "name_zh": "啟德空中花園",
+                "district": "KOWLOON CITY",
+                "address": "Shing Fung Road, Kai Tak",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-52OrgDWf24",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.19799962,
+                    22.34487565
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Kam Fung Street Sitting-out Area",
+                "name_zh": "金鳳街休憩處",
+                "district": "WONG TAI SIN",
+                "address": "Kam Fung Street , Wong Tai Sin",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-Dz8YN6Pk0H",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.97865514,
+                    22.3824184
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Ki Lun Kong Public Park",
+                "name_zh": "麒麟崗公眾公園",
+                "district": "TUEN MUN",
+                "address": "Opposite to Sam Shing Estate, Castle Peak Road, Tuen Mun",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-FFsMKzC2pj",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.19623143,
+                    22.33386391
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "King Fuk Street Sitting-out Area",
+                "name_zh": "景福街休憩處",
+                "district": "WONG TAI SIN",
+                "address": "King Fuk Street, Wong Tai Sin",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-fJjRzFzbeH",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17021018,
+                    22.30011781
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Kowloon Park",
+                "name_zh": "九龍公園",
+                "district": "YAU TSIM MONG",
+                "address": "22 Austin Road, Tsim Sha Tsui",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-RGYDT5cdLC",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.18982714,
+                    22.33165589
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Kowloon Walled City Park",
+                "name_zh": "九龍寨城公園",
+                "district": "KOWLOON CITY",
+                "address": "Tung Tsing Road,Kowloon City",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-ru4VUm5riY",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.1239729,
+                    22.35779478
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Kwai Hei Street Sitting-out Area",
+                "name_zh": "葵喜街休憩處",
+                "district": "KWAI TSING",
+                "address": "Kwai Fuk Road, Kwai Chung",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-AqubCw5xh5",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17368793,
+                    22.44700107
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Kwong Fuk Sitting-out Area",
+                "name_zh": "廣福休憩處",
+                "district": "TAI PO",
+                "address": "Kwong Wang Street, Tai Po",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-wpAN17dM0g",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.13698489,
+                    22.3394756
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Lai Chi Kok Park",
+                "name_zh": "荔枝角公園",
+                "district": "SHAM SHUI PO",
+                "address": "1 Lai Wan Road, Lai Chi Kok",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-P5fuf2N5u4",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.18384743,
+                    22.34484541
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Lion Rock Park",
+                "name_zh": "獅子山公園",
+                "district": "WONG TAI SIN",
+                "address": "Chuk Yuen Road, Wong Tai Sin, Kowloon",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-1e0VvRjAeV",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17142429,
+                    22.34284928
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Lung Cheung Road Lookout",
+                "name_zh": "龍翔道眺望處",
+                "district": "SHAM SHUI PO",
+                "address": "Lung Cheung Road",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-sXOgLTlfAB",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.23118521,
+                    22.4272941
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Ma On Shan Park",
+                "name_zh": "馬鞍山公園",
+                "district": "SHA TIN",
+                "address": "12 On Chun Street, Ma On Shan",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-X2tjPVE39w",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.22040918,
+                    22.40883274
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Ma On Shan Promenade",
+                "name_zh": "馬鞍山海濱長廊",
+                "district": "SHA TIN",
+                "address": "Ning Tai Road, Ma On Shan",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-ZlzoiCJrMO",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.227343,
+                    22.4244587
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Ma On Shan Sai Sha Road Garden",
+                "name_zh": "馬鞍山西沙路花園",
+                "district": "SHA TIN",
+                "address": "Sai Sha Road, Ma On Shan",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-xPj7QCbFnV",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16555697,
+                    22.44273833
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Ma Wo Road Garden",
+                "name_zh": "馬窩路花園",
+                "district": "TAI PO",
+                "address": "2 Ma Wo Road, Tai Po, New Territories",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-cgq9zoZpkE",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.174382,
+                    22.3771877
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Mei Tin Road Sitting-out Area",
+                "name_zh": "美田路休憩處",
+                "district": "SHA TIN",
+                "address": "Mei Tin Road, Tai Wai",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-NoqFVkXgYs",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17409407,
+                    22.29541388
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Middle Road Children's Playground",
+                "name_zh": "中間道兒童遊樂場",
+                "district": "YAU TSIM MONG",
+                "address": "Middle Road, Tsim Sha Tsui, Kowloon",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-VEZTAkVpGw",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.99706424,
+                    22.2674179
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Mui Wo River Silver Garden",
+                "name_zh": "梅窩銀河花園",
+                "district": "ISLANDS",
+                "address": "Ngan Shek Street, Mui Wo, Lantau",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-areSw6Rl3I",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.1574113,
+                    22.32409123
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Nam Cheong Park",
+                "name_zh": "南昌公園",
+                "district": "SHAM SHUI PO",
+                "address": "20 Sham Mong Road, Kowloon",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-c6vdVQAAra",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.20452571,
+                    22.33912956
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Nan Lian Garden",
+                "name_zh": "南蓮園池",
+                "district": "WONG TAI SIN",
+                "address": "Fung Tak Road, Diamond Hill, Wong Tai Sin",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-bo0YEMwZVW",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.21380222,
+                    22.33615123
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Ngau Chi Wan Park",
+                "name_zh": "牛池灣公園",
+                "district": "WONG TAI SIN",
+                "address": "71 Fung Shing Street, Ngau Chi Wan, Wong Tai Sin",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-I2a64DY2ls",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.21501591,
+                    22.32298436
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Ngau Tau Kok Park",
+                "name_zh": "牛頭角公園",
+                "district": "KWUN TONG",
+                "address": "199 Kwun Tong Road, Kowloon",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-sSEeWWvi6f",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.13411131,
+                    22.49892247
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "North District Park",
+                "name_zh": "北區公園",
+                "district": "NORTH",
+                "address": "Jockey Club Road, Sheung Shui",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-LVE18DbyCn",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.20149094,
+                    22.29348308
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "North Point Promenade",
+                "name_zh": "北角海濱花園",
+                "district": "EASTERN",
+                "address": "North Point Ferry Pier, Hong Kong",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-7Px3rbSQmS",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.14357793,
+                    22.28293107
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Oaklands Avenue Sitting-out Area",
+                "name_zh": "屋蘭士街休憩處",
+                "district": "CENTRAL AND WESTERN",
+                "address": "Oaklands Avenue, Mid-level",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-6rViC3SPUx",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.20511619,
+                    22.38939996
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "On Muk Street Garden",
+                "name_zh": "安睦街花園",
+                "district": "SHA TIN",
+                "address": "On Muk Street, Sha Tin",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-OOlKwDWFKQ",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.232035,
+                    22.3229847
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "On Sau Road Park",
+                "name_zh": "安秀道公園",
+                "district": "KWUN TONG",
+                "address": "On Sau Road, Kwun Tong",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-sgCQLfMsLv",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.03578081,
+                    22.28845208
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Peng Lei Road Sitting-out Area",
+                "name_zh": "坪利路休憩處",
+                "district": "ISLANDS",
+                "address": "Peng Lei Road, Peng Chau",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-ame04g5LEB",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15655701,
+                    22.28821414
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Pier 2 Garden",
+                "name_zh": "二號碼頭花園",
+                "district": "CENTRAL AND WESTERN",
+                "address": "Roof, Central Pier No. 2, Man Kwong Street, Central",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-nrf7kVf4PE",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15747841,
+                    22.28798776
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Pier 3 Garden",
+                "name_zh": "三號碼頭花園",
+                "district": "CENTRAL AND WESTERN",
+                "address": "Roof, Central Pier No. 3,Man Kwong Street, Central",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-wxKnsizorm",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.25765676,
+                    22.3187749
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Po Hong Park",
+                "name_zh": "寶康公園",
+                "district": "SAI KUNG",
+                "address": "Wan Lung Road, Tseung Kwan O",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-Axj752YtqU",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.19959062,
+                    22.34587074
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Po Kong Village Road / Shung Wah Street Sitting-out Area",
+                "name_zh": "蒲崗村道 / 崇華街休憩處",
+                "district": "WONG TAI SIN",
+                "address": "J/O Po Kong Village Road / Shung Wah Street",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-CA262F1tyi",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.25400714,
+                    22.32723834
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Po Lam Sitting-Out Area",
+                "name_zh": "寶琳休憩處",
+                "district": "SAI KUNG",
+                "address": "Po Lam Road North, Tseung Kwan O, Sai Kung",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-fWDZXFWOpJ",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.2529916,
+                    22.3250173
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Po Tsui Park",
+                "name_zh": "寶翠公園",
+                "district": "SAI KUNG",
+                "address": "Po Hong Road, Tseung Kwan O",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-klKC2x8CVF",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.971751,
+                    22.3924687
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Pui To Road (South) Rest Garden",
+                "name_zh": "杯渡路(南)休憩花園",
+                "district": "TUEN MUN",
+                "address": "Tin Hau Road, Tuen Mun",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-nZArw8Lcn4",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.21552469,
+                    22.28840423
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Quarry Bay Park",
+                "name_zh": "鰂魚涌公園",
+                "district": "EASTERN",
+                "address": "Near Hoi Tai Street, Quarry Bay",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-PCHX6uonyw",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.2143695,
+                    22.29039576
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Quarry Bay Promenade",
+                "name_zh": "鰂魚涌海濱花園",
+                "district": "EASTERN",
+                "address": "Hoi Yu Street, Quarry Bay",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-FYLkrNwvlv",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.27464489,
+                    22.38255826
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Sai Kung Waterfront Park",
+                "name_zh": "西貢海濱公園",
+                "district": "SAI KUNG",
+                "address": "Wai Man Road, Sai Kung",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-qcg70gM907",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.24476331,
+                    22.26433791
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "San Ha Street Playground",
+                "name_zh": "新廈街遊樂場",
+                "district": "EASTERN",
+                "address": "San Ha Street",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-AEXuVgzHoI",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.97045475,
+                    22.39299937
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "San On Sitting-out Area",
+                "name_zh": "新安休憩處",
+                "district": "TUEN MUN",
+                "address": "San On Street, Tuen Mun",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-vZttZbdzhg",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.13640676,
+                    22.49518487
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "San Wan Road Sitting-out Area",
+                "name_zh": "新運路休憩處",
+                "district": "NORTH",
+                "address": "San Wan Road, Fanling",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-DMXvsIKYYc",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.18987333,
+                    22.37949163
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Sha Tin Park",
+                "name_zh": "沙田公園",
+                "district": "SHA TIN",
+                "address": "2 Yuen Wo Road, Shatin",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-YiaaI2jovP",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17098204,
+                    22.33858998
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Shek Kip Mei Park",
+                "name_zh": "石硤尾公園",
+                "district": "SHAM SHUI PO",
+                "address": "270 Nam Cheong Street, Sham Shui Po",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-QA2yMBxHw6",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.136647,
+                    22.3646227
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Shek Pui Street Garden",
+                "name_zh": "石貝街花園",
+                "district": "KWAI TSING",
+                "address": "Shek Pui Street, Kwai Chung",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-Oa1StqAyva",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.10263598,
+                    22.43184428
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Sheung Tsuen Park",
+                "name_zh": "上村公園",
+                "district": "YUEN LONG",
+                "address": "Kam Sheung Road, Yuen Long",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-rsWb6zf6ol",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.189885,
+                    22.3769827
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Shing Mun River Promenade Garden No.1",
+                "name_zh": "城門河第一海濱花園",
+                "district": "SHA TIN",
+                "address": "Che Kung Miu Road, Sha Tin",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-YIjOe1WBPO",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.201896,
+                    22.3891267
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Shing Mun River Promenade Garden No.2",
+                "name_zh": "城門河第二海濱花園",
+                "district": "SHA TIN",
+                "address": "Tai Chung Kiu Road, Sha Tin",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-wykvjbGKqL",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.199105,
+                    22.3914707
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Shing Mun River Promenade Garden No.3",
+                "name_zh": "城門河第三海濱花園",
+                "district": "SHA TIN",
+                "address": "Tai Chung Kiu Road, City One, Sha Tin",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-K3dGu4TbGo",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.12507259,
+                    22.37474917
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Shing Mun Valley Park",
+                "name_zh": "城門谷公園",
+                "district": "TSUEN WAN",
+                "address": "Shing Mun Road, Tsuen Wan",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-AsRznRLqdt",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.21339815,
+                    22.21679304
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Sun Pat Kan Sitting-out Area",
+                "name_zh": "新八間休憩處",
+                "district": "SOUTHERN",
+                "address": "Wong Ma Kok Road, Stanley",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-RzN9mQXm2J",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.26216009,
+                    22.38060389
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tai Ping Village Playground",
+                "name_zh": "太平村遊樂場",
+                "district": "SAI KUNG",
+                "address": "Po Lo Che Road, Sai Kung",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-xtjKGEYMwC",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.18904932,
+                    22.43290165
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tai Po Kau Park",
+                "name_zh": "大埔滘公園",
+                "district": "TAI PO",
+                "address": "Tai Po Road (Tai Po Kau), Tai Po Kau",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-TIvqY40FUn",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17900493,
+                    22.45182725
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tai Po Waterfront Park",
+                "name_zh": "大埔海濱公園",
+                "district": "TAI PO",
+                "address": "Dai Fat Street, Tai Po",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-7jzyallSK9",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.12329124,
+                    22.50028734
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tai Tau Leng Sitting-out Area",
+                "name_zh": "大頭嶺休憩處",
+                "district": "NORTH",
+                "address": "Tai Tau Leng Village, Po Shek Wu Road, Sheung Shui, N.T.",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-5wh83GvZu0",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.02918811,
+                    22.20503122
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tai Tsoi Yuen Garden",
+                "name_zh": "大菜園花園",
+                "district": "ISLANDS",
+                "address": "Tai Tsoi Yuen Road, Cheung Chau",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-MpEQmqOGjF",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16557869,
+                    22.28135824
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tamar Park",
+                "name_zh": "添馬公園",
+                "district": "CENTRAL AND WESTERN",
+                "address": "Harcourt Road, Admiralty",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-iW7u7j4jI3",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16457003,
+                    22.43881124
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tat Wan Road Sitting out Area",
+                "name_zh": "達運道休憩處",
+                "district": "TAI PO",
+                "address": "Tat Wan Road, Tai Po",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-ryTLj0YW3Y",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.12679133,
+                    22.50931355
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tin Ping Road Garden",
+                "name_zh": "天平路花園",
+                "district": "NORTH",
+                "address": "Tin Ping Road, Sheung Shui, N.T.",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-5K0bBxQNUU",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.00345421,
+                    22.45565875
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tin Shui Wai Park",
+                "name_zh": "天水圍公園",
+                "district": "YUEN LONG",
+                "address": "6 Tin Shui Road, Tin Shui Wai, Yuen Long",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-0V6UUhI4vF",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.00852996,
+                    22.4520446
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tin Tsz Garden",
+                "name_zh": "天慈花園",
+                "district": "YUEN LONG",
+                "address": "Tin Shui Road, Tin Shui Wai, Yuen Long",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-ByBtZORk1n",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.00744969,
+                    22.46323409
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tin Yip Road Park",
+                "name_zh": "天業路公園",
+                "district": "YUEN LONG",
+                "address": "Tin Yip Road, Tin Shui Wai",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-yLiQUF5qSL",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.185365,
+                    22.4406047
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tolo Harbour Garden",
+                "name_zh": "吐露港花園",
+                "district": "TAI PO",
+                "address": "Tolo Highway, Tai Po",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-qo1WuHhKZG",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16985649,
+                    22.32840315
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tong Yam Street Hillside Sitting-out Area",
+                "name_zh": "棠蔭街山邊休憩處",
+                "district": "SHAM SHUI PO",
+                "address": "Tong Yam Street, Shek Kip Mei",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-sbvnNsnhcJ",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.26141938,
+                    22.30205735
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tseung Kwan O Waterfront Park",
+                "name_zh": "將軍澳海濱公園",
+                "district": "SAI KUNG",
+                "address": "Tong Chun Street, Tseung Kwan O, Sai Kung",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-Mo3hIXgmYC",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.98036861,
+                    22.37727587
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tsing Bik Sitting-out Area",
+                "name_zh": "青碧休憩處",
+                "district": "TUEN MUN",
+                "address": "Tsing Bik Street, Tuen Mun",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-mmUuxFQDGX",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.09881255,
+                    22.36236049
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tsing Yi Northeast Park",
+                "name_zh": "青衣東北公園",
+                "district": "KWAI TSING",
+                "address": "10, Tam Kon Shan Road, Tsing Yi",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-blUhXe01yV",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.10587214,
+                    22.35616427
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tsing Yi Park",
+                "name_zh": "青衣公園",
+                "district": "KWAI TSING",
+                "address": "Tsing Luk Street, Tsing Yi",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-jebQerJrxW",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.11282231,
+                    22.36711399
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tsuen Wan Park",
+                "name_zh": "荃灣公園",
+                "district": "TSUEN WAN",
+                "address": "59 Wing Shun Street, Tsuen Wan",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-9gHcg77oos",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.1121541,
+                    22.36337508
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tsuen Wan Riviera Park",
+                "name_zh": "荃灣海濱公園",
+                "district": "TSUEN WAN",
+                "address": "2A Yi Hong Street, Tsuen Wan",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-anub7Fp9zb",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.97344392,
+                    22.39193385
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tuen Mun Park",
+                "name_zh": "屯門公園",
+                "district": "TUEN MUN",
+                "address": "Tuen Mun Heung Sze Wui Road, Tuen Mun",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-XJtP9Khs5q",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.94888916,
+                    22.29081439
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Tung Chung North Park",
+                "name_zh": "東涌北公園",
+                "district": "ISLANDS",
+                "address": "No. 29 Man Tung Road, Tung Chung",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-miZxcmDeKy",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.18822735,
+                    22.28256382
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Victoria Park",
+                "name_zh": "維多利亞公園",
+                "district": "WAN CHAI",
+                "address": "1 Hing Fat Street, Causeway Bay",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-115xU1eR6m",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.22603648,
+                    22.30397107
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Wai Lok Street Temporary Soccer Pitch",
+                "name_zh": "偉樂街臨時足球場",
+                "district": "KWUN TONG",
+                "address": "Wai Yip Street and Wai Lok Street junction, Kwun Tong, Kowloon (near Laguna Park)",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-26izZF3OaR",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16936458,
+                    22.26709982
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Wan Chai Gap Park",
+                "name_zh": "灣仔峽公園",
+                "district": "WAN CHAI",
+                "address": "Stubbs Road , Wan Chai",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-ylVXUwSXzA",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16923079,
+                    22.2670266
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Wan Chai Gap Park",
+                "name_zh": "灣仔峽公園",
+                "district": "WAN CHAI",
+                "address": "Coombe Road, Mid-Levels, Wan Chai, HK",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-du0UFjuJMg",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.26885517,
+                    22.30502708
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Wan Po Road Pet Garden",
+                "name_zh": "環保大道寵物公園",
+                "district": "SAI KUNG",
+                "address": "Wan Po Road, Tseung Kwan O, Sai Kung",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-OBJ88Ylg3K",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.13508775,
+                    22.2502441
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Waterfall Bay Park",
+                "name_zh": "瀑布灣公園",
+                "district": "SOUTHERN",
+                "address": "Waterfall Bay Road, Wah Fu Estate",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-dOhl3DpXNZ",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15456913,
+                    22.30069709
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "West Kowloon Waterfront Promenade",
+                "name_zh": "西九龍海濱長廊",
+                "district": "YAU TSIM MONG",
+                "address": "West Kowloon Reclamation Area (J/O Austin Road West/ Nga Cheung Road)",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-HqkybXOO3v",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15134387,
+                    22.3402211
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Wing Hong Street Rest Garden",
+                "name_zh": "永康街休憩花園",
+                "district": "SHAM SHUI PO",
+                "address": "Wing Hong Street",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-vM8epVBV12",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15015473,
+                    22.28325187
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Wing Lee Street Rest Garden",
+                "name_zh": "永利街休憩花園",
+                "district": "CENTRAL AND WESTERN",
+                "address": "Wing Lee Street, Sheung Wan",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-JfoDsKxCKD",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17954941,
+                    22.52234447
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Wo Keng Shan Road Garden",
+                "name_zh": "禾徑山路花園",
+                "district": "NORTH",
+                "address": "Wo Keng Shan Road, Sha Tau Kok Road, Fanling, N.T",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-vhrz4OouUm",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.18428517,
+                    22.27020923
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Wong Nai Chung Road Crescent Garden",
+                "name_zh": "黃泥涌道新月花園",
+                "district": "WAN CHAI",
+                "address": "Wong Nai Chung Road, Happy Valley, Hong Kong",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-oKxHLeZpUy",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.96642758,
+                    22.37545989
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Wu King Road Garden",
+                "name_zh": "湖景路花園",
+                "district": "TUEN MUN",
+                "address": "Wu King Road, Tuen Mun",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-3YLT6VjX4m",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.14487316,
+                    22.48556901
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Yat Ming Road Park",
+                "name_zh": "一鳴路公園",
+                "district": "FANLING",
+                "address": "Junction of Yat Ming Road and Pak Wo Road",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-hWRs4zr8CD",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17728543,
+                    22.448282
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Yuen Chau Tsai Park",
+                "name_zh": "元洲仔公園",
+                "district": "TAI PO",
+                "address": "Island House Lane, Tai Po",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-zIaqtroUOz",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.01892631,
+                    22.44249924
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Yuen Long Park",
+                "name_zh": "元朗公園",
+                "district": "YUEN LONG",
+                "address": "Town Park Road North, Yuen Long",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "park-lxIS9bEv2Q",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17380325,
+                    22.32577476
+                ]
+            },
+            "properties": {
+                "category": "park",
+                "name": "Yuen Po Street Bird Garden",
+                "name_zh": "園圃街雀鳥花園",
+                "district": "YAU TSIM MONG",
+                "address": "Yuen Po Street, Mongkok",
+                "area_m2": "",
+                "source": "Parks_Zoos_and_Gardens.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-gepLB1D3NR",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.11276962,
+                    22.36901837
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Nina Tower",
+                "name_zh": "如心廣場",
+                "district": "TSUEN WAN",
+                "address": "8 YEUNG UK ROAD",
+                "area_m2": "3423",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-0bdQlzzkqg",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17919663,
+                    22.30624451
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Phase 8 Development of the Hong Kong Polytechnic University",
+                "name_zh": "香港理工大學八期",
+                "district": "YAU TSIM MONG",
+                "address": "181 Chatham Road South",
+                "area_m2": "7941",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-yjSZhfmq47",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17976378,
+                    22.31742406
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Hong Kong Metropolitan University",
+                "name_zh": "香港都會大學",
+                "district": "KOWLOON CITY",
+                "address": "1 Sheung Shing Street",
+                "area_m2": "500",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-amesUFo7SY",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16090647,
+                    22.33317067
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Vista",
+                "name_zh": "海峯",
+                "district": "SHAM SHUI PO",
+                "address": "188 Fuk Wa Street",
+                "area_m2": "250",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-8EXokKLksN",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.20128905,
+                    22.39899322
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Royal Ascot",
+                "name_zh": "駿景園",
+                "district": "SHA TIN",
+                "address": "1 Tsun King Road",
+                "area_m2": "8890",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-L86cgATHuC",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15546956,
+                    22.34000619
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Beacon Lodge",
+                "name_zh": "豐盛居",
+                "district": "SHAM SHUI PO",
+                "address": "373 Po On Road",
+                "area_m2": "250",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-ZfbahHwEOk",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17334193,
+                    22.2974283
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "K11",
+                "name_zh": "K11",
+                "district": "YAU TSIM MONG",
+                "address": "18 Hanoi Road",
+                "area_m2": "1200",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-XgBIeATDth",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15784547,
+                    22.2859493
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Hong Kong Station Development (Open Space -1)",
+                "name_zh": "香港站物業發展(休憩空間-1)",
+                "district": "CENTRAL & WESTERN",
+                "address": "Harbour View Street, Central",
+                "area_m2": "9600",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-wNZAeYFyq1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.1611681,
+                    22.2792713
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Bank of China Tower",
+                "name_zh": "中銀大廈",
+                "district": "CENTRAL & WESTERN",
+                "address": "1 Garden Road",
+                "area_m2": "1720",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-Hi5uqenCcr",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.25152375,
+                    22.43007881
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Symphony Bay Villa Rhapsody",
+                "name_zh": "帝琴灣-凱琴居",
+                "district": "TAI PO",
+                "address": "533 Sai Sha Road",
+                "area_m2": "3600",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-XxJq7XiZus",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.21826969,
+                    22.28438282
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The Floridian",
+                "name_zh": "逸意居",
+                "district": "EASTERN",
+                "address": "18 Sai Wan Terrace, Quarry Bay",
+                "area_m2": "540",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-w7X6LREkmI",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.19376899,
+                    22.29072673
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "City Garden",
+                "name_zh": "城市花園",
+                "district": "EASTERN",
+                "address": "233 Electric Road",
+                "area_m2": "5420",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-Po7oSrJp9j",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16489109,
+                    22.27699158
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Pacific Place Phases I & II (Open Space -1)",
+                "name_zh": "太古廣場一及二期(休憩空間-1)",
+                "district": "CENTRAL & WESTERN",
+                "address": "88 Queensway",
+                "area_m2": "3000",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-LJiYEPnya2",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16849864,
+                    22.31044123
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Prosperous Garden",
+                "name_zh": "駿發花園",
+                "district": "YAU TSIM MONG",
+                "address": "3 Public Square Street",
+                "area_m2": "7510",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-0VVCRcsmBa",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.2250137,
+                    22.28453448
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Grand Promenade",
+                "name_zh": "嘉亨灣",
+                "district": "EASTERN",
+                "address": "38 Tai Hong Street, Sai Wan Ho",
+                "area_m2": "1010",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-pBFoMtN5y2",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16046604,
+                    22.3245282
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Metro Harbour View",
+                "name_zh": "港灣豪庭",
+                "district": "YAU TSIM MONG",
+                "address": "8 Fuk Lee Street",
+                "area_m2": "9800",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-X0Lz2OZ5sI",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.21570544,
+                    22.38264041
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Castello",
+                "name_zh": "帝堡城",
+                "district": "SHA TIN",
+                "address": "69 Siu Lek Yuen Road",
+                "area_m2": "2700",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-77jsNxLEIt",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.19532127,
+                    22.28804447
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Le Sommet",
+                "name_zh": "豪廷峯",
+                "district": "EASTERN",
+                "address": "28 Fortress Hill Road, North Point",
+                "area_m2": "830",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-3rmObPYZhh",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.1834432,
+                    22.27487872
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The Leighton Hill",
+                "name_zh": "禮頓山",
+                "district": "WAN CHAI",
+                "address": "2B Broadwood Road, Happy Valley",
+                "area_m2": "2000",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-7AZ2yIJMak",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.2234,
+                        22.47455
+                    ],
+                    [
+                        114.22424,
+                        22.47455
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Soka Gakkai International of Hong Kong Cultural and Recreational Centre",
+                "name_zh": "香港國際創價學會文化康樂中心",
+                "district": "TAI PO",
+                "address": "33 Shan Nam Road",
+                "area_m2": "7000",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-e09XiW6RV9",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.21744412,
+                    22.31531289
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "International Trade Tower",
+                "name_zh": "International Trade Tower",
+                "district": "KWUN TONG",
+                "address": "348 KWUN TONG ROAD",
+                "area_m2": "1006",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-yfr1ogsn4f",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15137072,
+                    22.28432901
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Hollywood Terrace",
+                "name_zh": "荷李活華庭",
+                "district": "CENTRAL & WESTERN",
+                "address": "123 Hollywood Road",
+                "area_m2": "1400",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-MJP4xWmYXG",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.1294938,
+                    22.27879125
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The University of Hong Kong Jockey Club Student Village III (Open Space - 2)",
+                "name_zh": "香港大學賽馬會第三學生村(休憩空間-2)",
+                "district": "CENTRAL & WESTERN",
+                "address": "9 Lung Wah Street",
+                "area_m2": "2150",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-j1xVZZr2AP",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.97489182,
+                    22.40134331
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Chelsea Heights",
+                "name_zh": "卓爾居",
+                "district": "TUEN MUN",
+                "address": "1 Shek Pai Tau Path",
+                "area_m2": "2810",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-69WG2IIArQ",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.16026,
+                        22.2798
+                    ],
+                    [
+                        114.16009,
+                        22.27911
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Cheung Kong Center",
+                "name_zh": "長江集團中心",
+                "district": "CENTRAL & WESTERN",
+                "address": "2 Queen’s Road Central",
+                "area_m2": "5200",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-Xgqi2HuhLp",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        113.94246,
+                        22.29309
+                    ],
+                    [
+                        113.94092,
+                        22.29277
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Seaview Crescent",
+                "name_zh": "海堤灣畔",
+                "district": "ISLANDS",
+                "address": "8 Tung Chung Waterfront Road, Tung Chung",
+                "area_m2": "8300",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-WFENCCpM0w",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.15724,
+                        22.32064
+                    ],
+                    [
+                        114.15692,
+                        22.31938
+                    ],
+                    [
+                        114.15718,
+                        22.31768
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Olympian City 1",
+                "name_zh": "奧海城1期",
+                "district": "YAU TSIM MONG",
+                "address": "11 Hoi Fai Road",
+                "area_m2": "7800",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-LJKSkjq7aK",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.1532375,
+                    22.28527985
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Cosco Tower and Grand Millennium Plaza",
+                "name_zh": "中遠大廈及新紀元廣場",
+                "district": "CENTRAL & WESTERN",
+                "address": "31-33 Wing Lok Street /181-183 Queen’s Road Central",
+                "area_m2": "800",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-iH1AUsQufx",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.20213,
+                        22.29041
+                    ],
+                    [
+                        114.20185,
+                        22.28948
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Tanner Garden",
+                "name_zh": "丹拿花園",
+                "district": "EASTERN",
+                "address": "18 Tanner Road, North Point",
+                "area_m2": "1410",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-kch8cwI0Yc",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.21371,
+                        22.28394
+                    ],
+                    [
+                        114.21407,
+                        22.28418
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The Orchards",
+                "name_zh": "逸樺園",
+                "district": "EASTERN",
+                "address": "3 Greig Road, Quarry Bay",
+                "area_m2": "1271",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-zrGnJLWLRd",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.01231,
+                        22.305
+                    ],
+                    [
+                        114.01422,
+                        22.30465
+                    ],
+                    [
+                        114.0151,
+                        22.3038
+                    ],
+                    [
+                        114.01553,
+                        22.30613
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Discovery Bay",
+                "name_zh": "愉景灣",
+                "district": "ISLANDS",
+                "address": "Lantau",
+                "area_m2": "50000",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-xNUH3RSXrG",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.1922,
+                        22.30896
+                    ],
+                    [
+                        114.19203,
+                        22.30712
+                    ],
+                    [
+                        114.19277,
+                        22.30656
+                    ],
+                    [
+                        114.19175,
+                        22.30858
+                    ],
+                    [
+                        114.19289,
+                        22.30903
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Laguna Verde",
+                "name_zh": "海逸豪園",
+                "district": "KOWLOON CITY",
+                "address": "8 Laguna Verde Avenue",
+                "area_m2": "13000",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-vObUnHWjBU",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        113.94409,
+                        22.29183
+                    ],
+                    [
+                        113.94614,
+                        22.29338
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Coastal Skyline",
+                "name_zh": "藍天海岸",
+                "district": "ISLANDS",
+                "address": "12 Tung Chung Waterfront Road, Tung Chung",
+                "area_m2": "27400",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-NTuztF7TjF",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.18447,
+                        22.30522
+                    ],
+                    [
+                        114.18406,
+                        22.30525
+                    ],
+                    [
+                        114.18487,
+                        22.30498
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Royal Peninsula",
+                "name_zh": "半島豪庭",
+                "district": "KOWLOON CITY",
+                "address": "8 Hung Lai Road",
+                "area_m2": "2700",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-6QafpsdpgT",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.20279383,
+                    22.29144799
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Island Place",
+                "name_zh": "港運城",
+                "district": "EASTERN",
+                "address": "510 King’s Road, North Point",
+                "area_m2": "625",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-VwVpEMzwpZ",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16574387,
+                    22.27682931
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Pacific Place Phases I & II (Open Space -2)",
+                "name_zh": "太古廣場一及二期(休憩空間-2)",
+                "district": "CENTRAL & WESTERN",
+                "address": "88 Queensway",
+                "area_m2": "696",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-s9AYvKbPy2",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.20186134,
+                    22.28639098
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Braemar Hill Mansions",
+                "name_zh": "賽西湖大廈",
+                "district": "EASTERN",
+                "address": "15-43 Braemar Hill Road",
+                "area_m2": "25300",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-HS5Ayxpwou",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.14290537,
+                    22.28621968
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Island Crest",
+                "name_zh": "縉城峰",
+                "district": "CENTRAL & WESTERN",
+                "address": "8 First Street",
+                "area_m2": "700",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-DYRXO5tYeT",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.18952048,
+                    22.32135906
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Jubilant Place",
+                "name_zh": "欣榮花園",
+                "district": "KOWLOON CITY",
+                "address": "99 Pau Chung Street / 33 Ma Tau Kok Road",
+                "area_m2": "1800",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-2IremHmHp0",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.20615467,
+                    22.39977807
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Sha Tin Racecourse",
+                "name_zh": "沙田馬場",
+                "district": "SHA TIN",
+                "address": "6001 Tai Po Road -Sha Tin",
+                "area_m2": "80000",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-dcwypwEZPS",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.20997,
+                        22.32365
+                    ],
+                    [
+                        114.20933,
+                        22.3234
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Kingston International Centre",
+                "name_zh": "金利豐國際中心",
+                "district": "KWUN TONG",
+                "address": "19 WANG CHIU ROAD",
+                "area_m2": "4,400",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-NovYPC7Qo7",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.17235,
+                        22.27571
+                    ],
+                    [
+                        114.17222,
+                        22.27519
+                    ],
+                    [
+                        114.17249,
+                        22.27634
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The Avenue",
+                "name_zh": "囍匯",
+                "district": "WAN CHAI",
+                "address": "200 Queen’s Road East, Wan Chai",
+                "area_m2": "3321",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-N6ZEMY1ILJ",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15475129,
+                    22.33951844
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Heya Crystal",
+                "name_zh": "喜薈",
+                "district": "SHAM SHUI PO",
+                "address": "399 Castle Peak Road",
+                "area_m2": "150.016",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-2uIlMQjKcP",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15469265,
+                    22.28041313
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The Centrium (Open Space-1)",
+                "name_zh": "中央廣場 (休憩空間-1)",
+                "district": "CENTRAL & WESTERN",
+                "address": "60 Wyndham Street",
+                "area_m2": "700",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-6jHJKVLpKT",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.18474,
+                        22.33722
+                    ],
+                    [
+                        114.18479,
+                        22.33754
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Fu On Street CLP Substation",
+                "name_zh": "富安街中華電力變電站",
+                "district": "KOWLOON CITY",
+                "address": "18 Fu On Street",
+                "area_m2": "606",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-VURgYu0zzD",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        113.94067,
+                        22.28912
+                    ],
+                    [
+                        113.94274,
+                        22.29094
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Citygate",
+                "name_zh": "東薈城",
+                "district": "ISLANDS",
+                "address": "20 Tat Tung Road, Tung Chung",
+                "area_m2": "13900",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-VRipA8qgIy",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.98504689,
+                    22.41788141
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Botania Villa",
+                "name_zh": "綠怡居",
+                "district": "TUEN MUN",
+                "address": "138 Fuk Hang Tsuen Road",
+                "area_m2": "2900",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-Il9kuBvidV",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.16241,
+                        22.30551
+                    ],
+                    [
+                        114.16168,
+                        22.30403
+                    ],
+                    [
+                        114.16248,
+                        22.30375
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Kowloon Station Development",
+                "name_zh": "九龍站物業發展",
+                "district": "YAU TSIM MONG",
+                "address": "1 Austin Road West",
+                "area_m2": "17000",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-g7xk4CwBOA",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16078193,
+                    22.31874881
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "HSBC Centre",
+                "name_zh": "滙豐中心",
+                "district": "YAU TSIM MONG",
+                "address": "1 Sham Mong Road",
+                "area_m2": "3900",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-fjlGOkV3UG",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17656384,
+                    22.2771907
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Comix Home Base",
+                "name_zh": "動漫基地",
+                "district": "WAN CHAI",
+                "address": "1-11 Mallory Street & 6-12 Burrows Street, Wan Chai",
+                "area_m2": "390",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-5NHl0AhGwq",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.1544309,
+                    22.33899736
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Heya Aqua",
+                "name_zh": "喜漾",
+                "district": "SHAM SHUI PO",
+                "address": "393, 395, 397 & 399 Un Chau Street, 500-502 Fuk Wing Street",
+                "area_m2": "150.431",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-tTxh3U4FuU",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16284966,
+                    22.31509161
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Olympian City Two",
+                "name_zh": "奧海城二期",
+                "district": "YAU TSIM MONG",
+                "address": "18 Hoi Ting Road",
+                "area_m2": "8900",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-IJLbI2Q1nU",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17733061,
+                    22.34028754
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The Church of Jesus Christ of Latter-Day Saints Hong Kong China Temple",
+                "name_zh": "耶穌基督後期聖徒教會中國香港聖殿",
+                "district": "KOWLOON CITY",
+                "address": "2 Cornwall Street, Kowloon Tong",
+                "area_m2": "593",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-GkrI1UByDJ",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.2354,
+                        22.30489
+                    ],
+                    [
+                        114.23119,
+                        22.30736
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Sceneway Garden",
+                "name_zh": "匯景花園",
+                "district": "KWUN TONG",
+                "address": "Sceneway Road, Lam Tin",
+                "area_m2": "4840",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-bzVsAE2ESW",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.18222,
+                        22.33417
+                    ],
+                    [
+                        114.18172,
+                        22.33425
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Communication and Visual Arts Building of Hong Kong Baptist University",
+                "name_zh": "香港浸會大學傳理視藝大樓",
+                "district": "KOWLOON CITY",
+                "address": "5 Hereford Road",
+                "area_m2": "1800",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-c9Awmpdmat",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15467824,
+                    22.28094374
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The Centrium (Open Space -2)",
+                "name_zh": "中央廣場(休憩空間-2)",
+                "district": "CENTRAL & WESTERN",
+                "address": "60 Wyndham Street",
+                "area_m2": "265",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-GSLKWFWL35",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16886935,
+                    22.27664866
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Dominion Centre",
+                "name_zh": "東美中心",
+                "district": "WAN CHAI",
+                "address": "43-59 Queen’s Road East, Wan Chai",
+                "area_m2": "511",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-tkMBHvwkW0",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.1341105,
+                    22.28539392
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The Belcher’s",
+                "name_zh": "寶翠園",
+                "district": "CENTRAL & WESTERN",
+                "address": "89 Pok Fu Lam Road /8 Belcher’s Street",
+                "area_m2": "3518",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-qonbHwDHBq",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.1697038,
+                    22.27689253
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Li Chit Garden",
+                "name_zh": "李節花園",
+                "district": "WAN CHAI",
+                "address": "1 Li Chit Street, Wan Chai",
+                "area_m2": "250",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-iLcEyZaFaG",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15446952,
+                    22.28432114
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The Center",
+                "name_zh": "中環中心",
+                "district": "CENTRAL & WESTERN",
+                "address": "99 Queen’s Road Central",
+                "area_m2": "1500",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-8IBl52iirt",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.97724237,
+                    22.39285144
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Tuen Mun Town Plaza (Phase I)",
+                "name_zh": "屯門市廣場(第一期)",
+                "district": "TUEN MUN",
+                "address": "1 Tuen Shing Street, 1 Tuen Shun Street, 3 Tuen Lung Street & 2 Tuen Yan Street",
+                "area_m2": "6000",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-VJGmaJXGrQ",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        113.94777,
+                        22.29346
+                    ],
+                    [
+                        113.94744,
+                        22.29144
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Caribbean Coast",
+                "name_zh": "映灣園",
+                "district": "ISLANDS",
+                "address": "2 Kin Tung Road, Tung Chung",
+                "area_m2": "19290",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-TkbDcqRtkX",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16728775,
+                    22.27676598
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Starcrest",
+                "name_zh": "星域軒",
+                "district": "WAN CHAI",
+                "address": "9 Star Street, Wan Chai",
+                "area_m2": "1100",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-Q3VMHagNeV",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.12976535,
+                    22.27918868
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The University of Hong Kong Jockey Club Student Village III (Open Space - 1)",
+                "name_zh": "香港大學賽馬會第三學生村(休憩空間-1)",
+                "district": "CENTRAL & WESTERN",
+                "address": "9 Lung Wah Street",
+                "area_m2": "1130",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-fCQ4WfUQYO",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15667636,
+                    22.28600514
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Hong Kong Station Development (Open Space -2)",
+                "name_zh": "香港站物業發展(休憩空間-2)",
+                "district": "CENTRAL & WESTERN",
+                "address": "Harbour View Street, Central",
+                "area_m2": "3400",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-4fSHvYlfIr",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.19274172,
+                    22.30266531
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "One Harbour Front, Two Harbour Front and Harbour Grand Kowloon",
+                "name_zh": "海濱廣場一座、海濱廣場二座及九龍海逸君綽酒店",
+                "district": "KOWLOON CITY",
+                "address": "18-22 Tak Fung Street",
+                "area_m2": "970",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-K9QQ5Q2AfE",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.17953299,
+                    22.27763318
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The Morrison",
+                "name_zh": "駿逸峰",
+                "district": "WAN CHAI",
+                "address": "28 Yat Sin Street, Wan Chai",
+                "area_m2": "92",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-yoTuxKnG0h",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15956747,
+                    22.3286733
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Trinity Towers",
+                "name_zh": "丰滙",
+                "district": "SHAM SHUI PO",
+                "address": "339 Lai Chi Kok Road & 213 Yee Kuk Street",
+                "area_m2": "580",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-KwNW7XcGs8",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.29092,
+                        22.30999
+                    ],
+                    [
+                        114.28943,
+                        22.30853
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The Portofino",
+                "name_zh": "柏濤灣",
+                "district": "SAI KUNG",
+                "address": "Clear Water Bay Road, Pak To Avenue",
+                "area_m2": "16200",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-4PRyRjklRh",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.94011225,
+                    22.28834211
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Tung Chung Crescent",
+                "name_zh": "東堤灣畔",
+                "district": "ISLANDS",
+                "address": "1-2 Hing Tung Street, Tung Chung",
+                "area_m2": "9360",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-SsYzKbFj63",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.11816265,
+                    22.36651971
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Indi Home",
+                "name_zh": "樂悠居",
+                "district": "TSUEN WAN",
+                "address": "138 Yeung Uk Road",
+                "area_m2": "790",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-ZjO79kOiNL",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.97964097,
+                    22.38745128
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Chi Lok Fa Yuen",
+                "name_zh": "置樂花園",
+                "district": "TUEN MUN",
+                "address": "18 Tsing Hoi Circuit",
+                "area_m2": "3000",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-y0YtS2E7KJ",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.12791,
+                        22.35693
+                    ],
+                    [
+                        114.12799,
+                        22.35647
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "New Kwai Fong Gardens",
+                "name_zh": "新葵芳花園",
+                "district": "KWAI TSING",
+                "address": "Nos. 12-20 Kwai Yi Road",
+                "area_m2": "6400",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-9Aio3fYTTi",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.11404437,
+                    22.37002201
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Vision City",
+                "name_zh": "萬景峰",
+                "district": "TSUEN WAN",
+                "address": "1 Yeung Uk Road",
+                "area_m2": "3700",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-XZwe10CDRv",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.11510239,
+                    22.36724611
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The Aurora",
+                "name_zh": "映日灣",
+                "district": "TSUEN WAN",
+                "address": "88 Yeung Uk Road, Tsuen Wan",
+                "area_m2": "1,300",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-XRLi3ELmGM",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.06221,
+                        22.36636
+                    ],
+                    [
+                        114.05998,
+                        22.36684
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Bellagio",
+                "name_zh": "碧堤半島",
+                "district": "TSUEN WAN",
+                "address": "33 Castle Peak Road",
+                "area_m2": "6700",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-Vux01RJgfP",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.11795775,
+                    22.36661063
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "H Cube",
+                "name_zh": "立坊",
+                "district": "TSUEN WAN",
+                "address": "116-122 Yeung Uk Road",
+                "area_m2": "200",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-SQ8BSOpu00",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.10220735,
+                    22.37223849
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Belvedere Garden Phases II & III",
+                "name_zh": "麗城花園第二及三期",
+                "district": "TSUEN WAN",
+                "address": "620 & 625 Castle Peak Road - Tsuen Wan",
+                "area_m2": "5680",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-jhMnymnTFu",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.12014868,
+                    22.28119944
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The Sail at Victoria",
+                "name_zh": "傲翔灣畔",
+                "district": "CENTRAL & WESTERN",
+                "address": "Sai Ning Street",
+                "area_m2": "1300",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-URlTAxmHSn",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.1071798,
+                    22.35061471
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Tsing Yi Tin Hau Temple",
+                "name_zh": "青衣天后廟",
+                "district": "KWAI TSING",
+                "address": "Chung Mei Road, Tsing Yi",
+                "area_m2": "202",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-UJ9xQCi7hO",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.13691483,
+                    22.35369301
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Wonderland Villas",
+                "name_zh": "華景山莊",
+                "district": "KWAI TSING",
+                "address": "9 Wah King Hill Road",
+                "area_m2": "10100",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-s8ffQ1tfW0",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.14141,
+                        22.28545
+                    ],
+                    [
+                        114.14198,
+                        22.28542
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The Nova",
+                "name_zh": "星鑽",
+                "district": "CENTRAL & WESTERN",
+                "address": "88 Third Street",
+                "area_m2": "1300",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-n2WCjpvkum",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        114.13118,
+                        22.36311
+                    ],
+                    [
+                        114.13088,
+                        22.36284
+                    ]
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Sun Kwai Hing Gardens",
+                "name_zh": "新葵興花園",
+                "district": "KWAI TSING",
+                "address": "151-156 Tai Wo Hau Road, 166-174 Hing Fong Road",
+                "area_m2": "6000",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-Oc3bgN7x3G",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.12883256,
+                    22.28296321
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "La Maison Du Nord",
+                "name_zh": "采逸軒",
+                "district": "CENTRAL & WESTERN",
+                "address": "12 North Street",
+                "area_m2": "359",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-T5xqo0kixw",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15009418,
+                    22.26982114
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "The Peak Galleria",
+                "name_zh": "山頂廣場",
+                "district": "CENTRAL & WESTERN",
+                "address": "118 Peak Road",
+                "area_m2": "1500",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "open_space-a2T5bCXG9G",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15369528,
+                    22.32680324
+                ]
+            },
+            "properties": {
+                "category": "open_space",
+                "name": "Cullinan West",
+                "name_zh": "匯璽",
+                "district": "SHAM SHUI PO",
+                "address": "28 SHAM MONG ROAD",
+                "area_m2": "1000",
+                "source": "Public_Open_Space.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-ib2i32sBuY",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.16651279,
+                    22.25944543
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Aberdeen Country Park",
+                "name_zh": "香港仔郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-3jtEQ6UfeY",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.29606266,
+                    22.29543421
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Clear Water Bay Country Park",
+                "name_zh": "清水灣郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-O8Cq3wPTXJ",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15019419,
+                    22.36239245
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Kam Shan Country Park",
+                "name_zh": "金山郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-VbzIN0aYlM",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.29369518,
+                    22.36578407
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Kiu Tsui Country Park",
+                "name_zh": "橋咀郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-QVYDoE4UOp",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.09168751,
+                    22.45899845
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Lam Tsuen Country Park",
+                "name_zh": "林村郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-ytlO9MUsH2",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.96079437,
+                    22.28549089
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Lantau North (Extension) Country Park",
+                "name_zh": "北大嶼郊野公園(擴建部分)",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-4cgAcAWW4r",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.90872288,
+                    22.26626843
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Lantau North Country Park",
+                "name_zh": "北大嶼郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-6N77u810tK",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.93959979,
+                    22.25213841
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Lantau South Country Park",
+                "name_zh": "南大嶼郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-aDP9p7UDJI",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.18203943,
+                    22.3596854
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Lion Rock Country Park",
+                "name_zh": "獅子山郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-7lCqMkya13",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.13478252,
+                    22.27714039
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Lung Fu Shan Country Park",
+                "name_zh": "龍虎山郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-n6eM9O8lRg",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.24612749,
+                    22.38044088
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Ma On Shan Country Park",
+                "name_zh": "馬鞍山郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-qRJ5oPVmbf",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.21362888,
+                    22.49631235
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Pat Sin Leng Country Park",
+                "name_zh": "八仙嶺郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-JMP5eMQQEa",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.31150871,
+                    22.5138695
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Plover Cove (Extension) Country Park",
+                "name_zh": "船灣郊野公園(擴建部分)",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-kfDHjQzodb",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.26659554,
+                    22.49963279
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Plover Cove Country Park",
+                "name_zh": "船灣郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-bdzwWRB4ou",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.14351806,
+                    22.26531227
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Pok Fu Lam Country Park",
+                "name_zh": "薄扶林郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-7Ne3BO2LPe",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.35393555,
+                    22.40022586
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Sai Kung East Country Park",
+                "name_zh": "西貢東郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-iHWGskhEG2",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.30764373,
+                    22.43467602
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Sai Kung West Country Park",
+                "name_zh": "西貢西郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-kcL2dfETRg",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.34148916,
+                    22.46932188
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Sai Kung West Country Park (Wan Tsai Ext.)",
+                "name_zh": "西貢西郊野公園(灣仔擴建部分)",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-cXYnvJgTxu",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.24217699,
+                    22.23775901
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Shek O Country Park",
+                "name_zh": "石澳郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-sJjFSXFPDU",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.14707946,
+                    22.39941706
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Shing Mun Country Park",
+                "name_zh": "城門郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-LZ9KDUHvlc",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.04802962,
+                    22.39124105
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Tai Lam Country Park",
+                "name_zh": "大欖郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-NViUQGolMK",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.12570719,
+                    22.41837575
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Tai Mo Shan Country Park",
+                "name_zh": "大帽山郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-0uyx0B4cnT",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.20822804,
+                    22.24770286
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Tai Tam Country Park",
+                "name_zh": "大潭郊野公園",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "country_park-nULN75XJGE",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.21648125,
+                    22.27379966
+                ]
+            },
+            "properties": {
+                "category": "country_park",
+                "name": "Tai Tam Country Park (Quarry Bay Ext.)",
+                "name_zh": "大潭郊野公園(鰂魚涌擴建部分)",
+                "district": "",
+                "address": "N.A.",
+                "area_m2": "",
+                "source": "Country_Parks.geojson"
+            }
+        }
+    ]
+}

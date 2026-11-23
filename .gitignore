@@ -13,7 +13,14 @@ wheels/
 node_modules/
 .DS_Store
 
+# unplugin 自动生成的 Vue/auto-import 类型声明
+auto-imports.d.ts
+components.d.ts
+
 result/
+
+# 分析流程调试产物（原始 SSE 事件流 / 摘要 / 临时报告）
+docs/records/
 
 docs/.vitepress/dist
 docs/.vitepress/cache

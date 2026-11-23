@@ -1,79 +1,82 @@
-import { reactive } from 'vue';
+import { reactive } from 'vue'
+import { Layer } from './useLayer'
+import type { LayerRole } from '@/core'
 
-export { Layer } from './useLayer.ts';
+export { Layer } from './useLayer'
 
 export interface LayerItem {
-  id: string;
-  type: new (props: any) => any;
-  visible: boolean;
-  state: Record<string, any>;
-  data: any;
-  set: (prop: string, value: any) => void;
-  [key: string]: any;
+  id: string
+  type: new (props: Record<string, any>) => any
+  visible: boolean
+  opacity: number
+  state: Record<string, any>
+  data: any
+  isExpanded: boolean
+  /** Monotonic data/style counter used by the map renderer for diffing. */
+  revision: number
+  role?: LayerRole
+  set: (prop: string, value: any) => void
+  setData: (data: unknown) => void
 }
 
 export class LayerGroup {
-  layers: LayerItem[];
+  layers: LayerItem[]
 
   constructor(layers: LayerItem[] = []) {
-    this.layers = reactive(layers) as LayerItem[];
+    this.layers = reactive(layers) as LayerItem[]
   }
 
-  // 添加新图层
-  addLayer(layer: LayerItem) {
-    this.layers.push(layer);
+  addLayer(layer: LayerItem): void {
+    this.layers.push(layer)
   }
 
-  // 移除图层
-  removeLayer(layerId: string) {
-    const index = this.layers.findIndex(l => l.id === layerId);
-    if (index !== -1) {
-      this.layers.splice(index, 1);
-    }
+  removeLayer(layerId: string): void {
+    const index = this.layers.findIndex((l) => l.id === layerId)
+    if (index !== -1) this.layers.splice(index, 1)
   }
 
-  // 通用属性更新方法
-  updateLayerProperty(layerId: string, prop: string, value: any) {
-    const layer = this.layers.find(l => l.id === layerId);
-    if (layer && typeof layer.set === 'function') {
-      layer.set(prop, value);
-    }
+  updateLayerProperty(layerId: string, prop: string, value: any): void {
+    const layer = this.layers.find((l) => l.id === layerId)
+    if (layer && typeof layer.set === 'function') layer.set(prop, value)
   }
 
-  // 更新图层的不透明度（保持兼容性）
-  setOpacity(layerId: string, opacity: number) {
-    this.updateLayerProperty(layerId, 'opacity', opacity);
+  setOpacity(layerId: string, opacity: number): void {
+    this.updateLayerProperty(layerId, 'opacity', opacity)
   }
 
-  // 更新图层的可见性（保持兼容性）
-  setVisibility(layerId: string, visible: boolean) {
-    this.updateLayerProperty(layerId, 'visible', visible);
+  setVisibility(layerId: string, visible: boolean): void {
+    this.updateLayerProperty(layerId, 'visible', visible)
   }
 
-  // 设置图层顺序（支持拖拽）
-  setLayerOrder(newOrder: LayerItem[]) {
-    this.layers.length = 0;
-    this.layers.push(...newOrder);
+  setLayerOrder(newOrder: LayerItem[]): void {
+    this.layers.length = 0
+    this.layers.push(...newOrder)
   }
 
-  // 根据图层类型和属性生成 DeckGL 图层
+  /**
+   * UI 列表是「上到下 = 图层的上到下」；deck.gl 的数组顺序是「先画 = 底层」，
+   * 所以这里必须 reverse，否则高亮层会被基础层盖住。
+   *
+   * 交互不要手工挑 layer：deck.gl 自带 picking 的层级判定（命中多个时取最上层），
+   * 把 pickable 交给每个图层自己的 state 决定即可。
+   * 旧实现 `pickable = index === 0` 在 reverse 之后指向的是最底层，是个 bug。
+   */
   getLayers(): any[] {
-    const visibleLayers = this.layers.filter(layer => layer.visible).reverse();
-
-    return visibleLayers.map((layer, index) => {
-      const LayerType = layer.type;
-      // 只有最上层图层（数组的第一个元素）也就是倒数第一个元素的 pickable 为 true
-      const pickable = index === visibleLayers.length - 1;
-
-      // 收集所有状态属性
-      const layerProps = {
-        id: `${layer.id}-${Date.now()}`,
-        pickable,
+    // Keep ALL layers in the array, including hidden ones. Visibility is a
+    // deck.gl prop (already inside `layer.state`), not an array-membership
+    // decision. Removing hidden layers from the array makes deck.gl finalize
+    // their instances; reusing those finalized instances later crashes with
+    // "finalized layer cannot be reused" and takes down the whole overlay.
+    return [...this.layers].reverse().map((layer) => {
+      const LayerType = layer.type
+      return new LayerType({
+        id: layer.id,
+        pickable: true,
         ...layer.state,
-        data: layer.data
-      };
-
-      return new LayerType(layerProps);
-    });
+        // Top-level data wins; layers created with `props.data` alone fall back
+        // to their reactive state (this is how the highlight layer starts empty).
+        data: layer.data ?? layer.state.data,
+      })
+    })
   }
 }

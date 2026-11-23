@@ -2,20 +2,14 @@ import copy
 from pydantic_ai import RunContext
 from ..utils.logger import logger
 from ..schema import GISDependencies
-from ..utils.geo_ops import generate_stable_id
-
-def _get_feature_by_ref(data: dict, layer_name: str, feature_id: str):
-    for i, f in enumerate(data.get('features', [])):
-        if generate_stable_id(layer_name, f, i) == feature_id:
-            return f
-    return None
+from ..utils.geo_ops import find_feature_by_id
 
 async def add_to_map(ctx: RunContext[GISDependencies], layer_name: str, feature_id: str, label: str) -> str:
     ctx.deps.add_status(f"📍 正在尝试将要素 {feature_id} 标点到地图...")
     logger.info(f"地图上点请求: 图层={layer_name}, ID={feature_id}")
     try:
         data = ctx.deps.loader.load_geojson(f"{layer_name}.json")
-        target = _get_feature_by_ref(data, layer_name, feature_id)
+        target = find_feature_by_id(data, layer_name, feature_id)
         
         if target:
             feat_to_render = copy.deepcopy(target)

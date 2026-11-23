@@ -1,0 +1,39 @@
+{
+  "bbox": [
+    113.85468,
+    22.19909,
+    114.4325,
+    22.55322
+  ],
+  "counts": {
+    "library": 186,
+    "post_office": 123,
+    "public_market": 104,
+    "police_station": 42,
+    "fehd_facility": 1159,
+    "street_posting_box": 1157,
+    "smart_lamppost": 50,
+    "country_park_visitor_centre": 8,
+    "country_park_water": 33
+  },
+  "total": 2862,
+  "skipped": {},
+  "duplicates_removed": {
+    "fehd_facility": 7
+  },
+  "coord_decimals": 5,
+  "sources": {
+    "library": "Libraries.geojson",
+    "post_office": "Post_Offices.geojson",
+    "public_market": "Public_Market_Information.geojson",
+    "police_station": "Police_Stations_Districts_Divisons_.geojson",
+    "fehd_facility": "FEHD_facility_and_service_locations.geojson",
+    "street_posting_box": "Street_Posting_Boxes.geojson",
+    "smart_lamppost": "Summary_of_Functions_on_Smart_Lampposts.geojson",
+    "country_park_visitor_centre": "Visitor_Centres_of_Country_Parks.geojson",
+    "country_park_water": "Country_Park_Water_Filling_Station.geojson"
+  },
+  "source_repo": "funglkf/hk-geodata",
+  "source_base_url": "https://raw.githubusercontent.com/funglkf/hk-geodata/main/static/json/",
+  "attribution": "Hong Kong Government open data (ODbL / open data licence)"
+}

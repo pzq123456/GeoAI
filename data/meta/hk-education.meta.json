@@ -1,0 +1,43 @@
+{
+  "bbox": [
+    113.86167,
+    22.2036,
+    114.32183,
+    22.54953
+  ],
+  "counts": {
+    "kindergarten": 1035,
+    "primary_aided": 428,
+    "primary_government": 34,
+    "secondary_aided": 363,
+    "secondary_government": 31,
+    "primary_international": 42,
+    "secondary_international": 26,
+    "higher_education": 120,
+    "ugc_funded": 8
+  },
+  "total": 2087,
+  "skipped": {},
+  "duplicates_removed": {
+    "kindergarten": 301,
+    "primary_aided": 2,
+    "secondary_aided": 3,
+    "primary_international": 1,
+    "higher_education": 1
+  },
+  "coord_decimals": 5,
+  "sources": {
+    "kindergarten": "Kindergartens.geojson",
+    "primary_aided": "Aided_Primary_Schools.geojson",
+    "primary_government": "Government_Primary_Schools.geojson",
+    "secondary_aided": "Aided_Secondary_Schools.geojson",
+    "secondary_government": "Government_Secondary_Schools.geojson",
+    "primary_international": "International_Schools_Primary_.geojson",
+    "secondary_international": "International_Schools_Secondary_.geojson",
+    "higher_education": "Higher_Education_Institutions.geojson",
+    "ugc_funded": "UGC-Funded_Institutions.geojson"
+  },
+  "source_repo": "funglkf/hk-geodata",
+  "source_base_url": "https://raw.githubusercontent.com/funglkf/hk-geodata/main/static/json/",
+  "attribution": "Hong Kong Government open data (ODbL / open data licence)"
+}

@@ -31,6 +31,14 @@ def setup_app_logging():
     logging.getLogger("uvicorn").handlers = []
     logging.getLogger("uvicorn.access").handlers = []
 
+    # Windows 控制台默认 GBK，emoji 状态消息会导致 UnicodeEncodeError。
+    # 强制 UTF-8 输出；不支持 reconfigure 的环境保持原样。
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding="utf-8", errors="backslashreplace")
+        except (AttributeError, ValueError):
+            pass
+
     # 配置 Loguru
     logger.remove()
     # 控制台输出

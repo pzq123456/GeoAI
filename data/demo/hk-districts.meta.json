@@ -1,0 +1,12 @@
+{
+  "bbox": [
+    113.834587097168,
+    22.1531944274903,
+    114.440971374512,
+    22.5620937347412
+  ],
+  "count": 18,
+  "source_repo": "Paulkit/HKMap",
+  "source_base_url": "https://raw.githubusercontent.com/Paulkit/HKMap/master/json/",
+  "attribution": "Hong Kong district boundaries (HKMap / OpenStreetMap-derived)"
+}

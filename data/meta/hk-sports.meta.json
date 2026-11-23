@@ -1,0 +1,41 @@
+{
+  "bbox": [
+    113.85917,
+    22.20434,
+    114.32134,
+    22.5525
+  ],
+  "counts": {
+    "swimming_pool": 44,
+    "sports_centre": 102,
+    "sports_ground": 25,
+    "tennis_court": 55,
+    "badminton_court": 114,
+    "basketball_court": 309,
+    "beach": 42,
+    "cycling_site": 25,
+    "stadium": 2,
+    "museum": 18,
+    "performance_venue": 17
+  },
+  "total": 753,
+  "skipped": {},
+  "duplicates_removed": {},
+  "coord_decimals": 5,
+  "sources": {
+    "swimming_pool": "Swimming_Pools.geojson",
+    "sports_centre": "Sports_Centres.geojson",
+    "sports_ground": "Sports_Grounds.geojson",
+    "tennis_court": "Tennis_Courts.geojson",
+    "badminton_court": "Badminton_Courts.geojson",
+    "basketball_court": "Basketball_Courts.geojson",
+    "beach": "Beaches.geojson",
+    "cycling_site": "Cycling_Sites.geojson",
+    "stadium": "Stadia.geojson",
+    "museum": "Museums.geojson",
+    "performance_venue": "Performance_Venues.geojson"
+  },
+  "source_repo": "funglkf/hk-geodata",
+  "source_base_url": "https://raw.githubusercontent.com/funglkf/hk-geodata/main/static/json/",
+  "attribution": "Hong Kong Government open data (ODbL / open data licence)"
+}

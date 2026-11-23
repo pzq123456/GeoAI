@@ -1,116 +1,65 @@
 <template>
-  <div class="property-container">
-    <el-scrollbar v-if="hasData" max-height="300px">
-      <el-descriptions
-        class="custom-descriptions"
-        :column="1"
-        size="small"
-        border
+  <div class="p-0.5">
+    <dl
+      v-if="hasData"
+      class="max-h-[300px] divide-y divide-border overflow-y-auto rounded-lg border border-border bg-surface-solid text-sm"
+    >
+      <div
+        v-for="(value, key) in displayProps"
+        :key="key"
+        class="flex items-start justify-between gap-3 px-3 py-2"
       >
-        <el-descriptions-item 
-          v-for="(value, key) in displayProps" 
-          :key="key"
-        >
-          <template #label>
-            <div class="prop-label">
-              {{ key }}
-            </div>
-          </template>
+        <dt class="shrink-0 text-xs font-medium text-text-2">{{ key }}</dt>
+        <dd class="flex min-w-0 items-center justify-end gap-1.5">
+          <span class="break-all text-right text-xs text-text">{{ value }}</span>
+          <Tooltip content="Copy value">
+            <Button
+              variant="ghost"
+              size="icon"
+              class="h-6 w-6 shrink-0 opacity-40 transition-opacity hover:opacity-100"
+              @click="copyToClipboard(value)"
+            >
+              <Copy :size="12" />
+            </Button>
+          </Tooltip>
+        </dd>
+      </div>
+    </dl>
 
-          <div class="prop-value-wrapper">
-            <span class="prop-text">{{ value }}</span>
-            <el-tooltip content="Copy Value" placement="top" :enterable="false">
-              <el-button 
-                link 
-                type="primary" 
-                class="copy-btn"
-                @click="copyToClipboard(value)"
-              >
-                <el-icon><CopyDocument /></el-icon>
-              </el-button>
-            </el-tooltip>
-          </div>
-        </el-descriptions-item>
-      </el-descriptions>
-    </el-scrollbar>
-
-    <el-empty 
-      v-else 
-      :image-size="60" 
-      description="No Object Selected" 
-    />
+    <Empty v-else description="No object selected" />
   </div>
 </template>
 
-<script setup>
-import { computed } from 'vue';
-import { ElMessage } from 'element-plus';
-import { InfoFilled, CopyDocument } from '@element-plus/icons-vue';
+<script setup lang="ts">
+import { computed } from 'vue'
+import { Copy } from 'lucide-vue-next'
+import type { GeoJsonFeature } from '@/types'
 
-const props = defineProps(['data']);
+import Button from '@/components/ui/Button.vue'
+import Tooltip from '@/components/ui/Tooltip.vue'
+import Empty from '@/components/ui/Empty.vue'
+import { toast } from '@/components/ui/useToast'
 
-const hasData = computed(() => props.data && Object.keys(displayProps.value).length > 0);
+const props = defineProps<{ data?: GeoJsonFeature | null }>()
+
+const hasData = computed(() => props.data && Object.keys(displayProps.value).length > 0)
 
 const displayProps = computed(() => {
-  if (!props.data) return {};
-  const source = props.data.properties || props.data;
+  if (!props.data) return {}
+  const source = props.data.properties || props.data
   // 过滤掉复杂对象，只保留基础类型，并排除常用的冗余字段（如 ID）
   return Object.fromEntries(
     Object.entries(source).filter(([_, v]) => typeof v !== 'object' && v !== null)
-  );
-});
+  )
+})
 
 // 复制功能
-const copyToClipboard = async (text) => {
+const copyToClipboard = async (text: unknown) => {
   try {
-    await navigator.clipboard.writeText(String(text));
-    ElMessage({
-      message: 'Copied to clipboard',
-      type: 'success',
-      duration: 1500,
-      grouping: true // 避免多次点击弹出多个提示
-    });
-  } catch (err) {
-    ElMessage.error('Copy failed');
+    await navigator.clipboard.writeText(String(text))
+    toast.success('Copied to clipboard', { duration: 1500 })
+  } catch {
+    toast.error('Copy failed')
   }
-};
+}
 </script>
-
-<style scoped>
-.property-container {
-  padding: 2px;
-  background-color: var(--el-bg-color);
-}
-
-/* 标签样式微调 */
-.prop-label {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  color: var(--el-text-color-secondary);
-}
-
-/* 值区域容器 */
-.prop-value-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.prop-text {
-  font-size: 12px;
-  word-break: break-all; /* 防止长字符串撑开表格 */
-  color: var(--el-text-color-primary);
-}
-
-.copy-btn {
-  padding: 4px;
-  opacity: 0.3;
-  transition: opacity 0.2s;
-}
-
-/* 只有鼠标滑过行时才显示复制按钮，保持界面清爽 */
-.prop-value-wrapper:hover .copy-btn {
-  opacity: 1;
-}
-</style>
